@@ -526,48 +526,8 @@ body {
     <h2 class="sec-title reveal">不吹概念，看效果</h2>
     <p class="sec-sub reveal">以下都是星禾元亨服务过的真实客户，数据可验证。</p>
 
-    <div class="case-grid">
-      <div class="case-card reveal">
-        <div class="case-top e1">💎</div>
-        <div class="case-body">
-          <span class="case-tag t1">TOB · Token代理</span>
-          <h4>深圳某AI初创公司</h4>
-          <p>接入通义千问API代理后，Token成本降低58%，月消耗从500万涨到3000万，产品迭代速度翻倍。</p>
-          <div class="case-kpi">
-            <div><div class="v">-58%</div><div class="l">Token成本</div></div>
-            <div><div class="v">6x</div><div class="l">用量增长</div></div>
-            <div><div class="v">2x</div><div class="l">迭代提速</div></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="case-card reveal">
-        <div class="case-top e2">🛒</div>
-        <div class="case-body">
-          <span class="case-tag t2">电商 · AI客服</span>
-          <h4>广州日用品电商商家</h4>
-          <p>部署AI客服流水线后，6人客服团队缩减到2人，响应速度从平均4分钟降到30秒内，客户满意度提升40%。</p>
-          <div class="case-kpi">
-            <div><div class="v">-67%</div><div class="l">人工成本</div></div>
-            <div><div class="v">8x</div><div class="l">响应提速</div></div>
-            <div><div class="v">24h</div><div class="l">全天在线</div></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="case-card reveal">
-        <div class="case-top e3">🏭</div>
-        <div class="case-body">
-          <span class="case-tag t3">实体 · GEO优化</span>
-          <h4>东莞五金制造厂 · 1688</h4>
-          <p>上线GEO内容工厂1个月，店铺关键词覆盖从23个暴增到350+，自然搜索流量提升12倍，询盘翻3倍。</p>
-          <div class="case-kpi">
-            <div><div class="v">+1400%</div><div class="l">关键词覆盖</div></div>
-            <div><div class="v">+300%</div><div class="l">询盘增长</div></div>
-            <div><div class="v">30天</div><div class="l">见效周期</div></div>
-          </div>
-        </div>
-      </div>
+    <div class="case-grid" id="caseGrid">
+      <div class="case-loading" style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text3);">加载中...</div>
     </div>
   </div>
 </section>
@@ -579,31 +539,8 @@ body {
     <h2 class="sec-title reveal">AI自动化实战干货</h2>
     <p class="sec-sub reveal">GEO内容工厂自动生成+全网分发，抖音/快手/小红书/微信公众号同步更新。</p>
 
-    <div class="art-grid">
-      <a class="art-card reveal" href="#articles">
-        <div class="date">📅 每周更新 · 🏷️ Token代理</div>
-        <h4>通义千问API怎么用最省钱？Token代理帮你省一半</h4>
-        <p>从计费模式到额度管理，一篇讲透企业级Token成本优化方案。月耗2亿Token的实战经验总结。</p>
-        <div class="art-tags">
-          <span class="art-tag">Token代理</span><span class="art-tag">成本优化</span><span class="art-tag">实战</span>
-        </div>
-      </a>
-      <a class="art-card reveal" href="#articles">
-        <div class="date">📅 每周更新 · 🏷️ AI岗位自动化</div>
-        <h4>AI替代不了人？那是你没装对——AI岗位自动化落地全流程</h4>
-        <p>从客服到内容运营，4个岗位的AI化方案，真实企业案例拆解。不是概念，是能跑的流水线。</p>
-        <div class="art-tags">
-          <span class="art-tag">岗位自动化</span><span class="art-tag">AI落地</span><span class="art-tag">全流程</span>
-        </div>
-      </a>
-      <a class="art-card reveal" href="#articles">
-        <div class="date">📅 每周更新 · 🏷️ GEO获客</div>
-        <h4>中小企业怎么做搜索霸屏？GEO内容工厂全流程拆解</h4>
-        <p>从关键词挖掘到8平台自动分发，一套系统让客户主动找上门。东莞五金厂30天实战复盘。</p>
-        <div class="art-tags">
-          <span class="art-tag">GEO优化</span><span class="art-tag">搜索霸屏</span><span class="art-tag">实体工厂</span>
-        </div>
-      </a>
+    <div class="art-grid" id="artGrid">
+      <div class="art-loading" style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text3);">加载中...</div>
     </div>
   </div>
 </section>
@@ -670,21 +607,83 @@ body {
 </footer>
 
 <script>
-// Scroll reveal
+// ===== Scroll Reveal Observer =====
 const ro = new IntersectionObserver((es) => {
   es.forEach(e => { if(e.isIntersecting) e.target.classList.add('on'); });
 }, { threshold:0.12, rootMargin:'0px 0px -40px 0px' });
-document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+function observeReveal() {
+  document.querySelectorAll('.reveal:not(.observed)').forEach(el => {
+    el.classList.add('observed');
+    ro.observe(el);
+  });
+}
+observeReveal();
 
-// Nav shadow on scroll
+// ===== Nav shadow =====
 window.addEventListener('scroll', () => {
   document.querySelector('.nav').style.boxShadow = window.scrollY > 40
     ? '0 2px 30px rgba(0,0,0,0.6)' : 'none';
 });
 
-// Close mobile on link
+// ===== Mobile menu =====
 document.querySelectorAll('.mob-menu a').forEach(a => {
   a.addEventListener('click', () => a.parentElement.classList.remove('on'));
+});
+
+// ===== Dynamic Content Loaders =====
+async function loadCases() {
+  const grid = document.getElementById('caseGrid');
+  try {
+    const res = await fetch('data/cases.json');
+    const cases = await res.json();
+    grid.innerHTML = cases.map(c => `
+      <div class="case-card reveal">
+        <div class="case-top ${c.bg}">${c.emoji}</div>
+        <div class="case-body">
+          <span class="case-tag ${c.color}">${c.tag}</span>
+          <h4>${c.title}</h4>
+          <p>${c.desc}</p>
+          <div class="case-kpi">
+            ${c.kpi.map(k => `<div><div class="v">${k.value}</div><div class="l">${k.label}</div></div>`).join('')}
+          </div>
+        </div>
+      </div>
+    `).join('');
+    observeReveal();
+  } catch(e) {
+    grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text3);">暂无案例数据</div>';
+  }
+}
+
+async function loadArticles() {
+  const grid = document.getElementById('artGrid');
+  try {
+    const res = await fetch('data/articles.json');
+    const articles = await res.json();
+    if (!articles.length) {
+      grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text3);">暂无文章，敬请期待</div>';
+      return;
+    }
+    grid.innerHTML = articles.map(a => `
+      <a class="art-card reveal" href="#articles">
+        <div class="date">📅 ${a.date} · 🏷️ ${a.category}</div>
+        <h4>${a.title}</h4>
+        <p>${a.summary}</p>
+        <div class="art-tags">
+          ${a.tags.map(t => `<span class="art-tag">${t}</span>`).join('')}
+        </div>
+      </a>
+    `).join('');
+    observeReveal();
+  } catch(e) {
+    grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text3);">文章加载失败</div>';
+  }
+}
+
+// ===== Init =====
+document.addEventListener('DOMContentLoaded', () => {
+  loadCases();
+  loadArticles();
 });
 </script>
 
