@@ -675,7 +675,7 @@ async function loadCases() {
     const res = await fetch('data/cases.json');
     const cases = await res.json();
     grid.innerHTML = cases.map(c => `
-      <div class="case-card reveal">
+      <a href="case.html?id=${c.id}" class="case-card reveal" style="text-decoration:none;color:inherit;display:block;">
         <div class="case-top ${c.bg}">${c.emoji}</div>
         <div class="case-body">
           <span class="case-tag ${c.color}">${c.tag}</span>
@@ -685,7 +685,7 @@ async function loadCases() {
             ${c.kpi.map(k => `<div><div class="v">${k.value}</div><div class="l">${k.label}</div></div>`).join('')}
           </div>
         </div>
-      </div>
+      </a>
     `).join('');
     observeReveal();
   } catch(e) {
@@ -703,7 +703,7 @@ async function loadArticles() {
       return;
     }
     grid.innerHTML = articles.map(a => `
-      <a class="art-card reveal" href="#articles">
+      <a class="art-card reveal" href="article.html?id=${a.id}"
         <div class="date">📅 ${a.date} · 🏷️ ${a.category}</div>
         <h4>${a.title}</h4>
         <p>${a.summary}</p>
