@@ -703,7 +703,7 @@ async function loadArticles() {
       return;
     }
     grid.innerHTML = articles.map(a => `
-      <a class="art-card reveal" href="article.html?id=${a.id}"
+      <a class="art-card reveal" href="article.html?id=${a.id}">
         <div class="date">📅 ${a.date} · 🏷️ ${a.category}</div>
         <h4>${a.title}</h4>
         <p>${a.summary}</p>
