@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cmh131419.github.io/xhyh/sitemap.xml
+Sitemap: https://xhyh.work/sitemap.xml

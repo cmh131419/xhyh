@@ -4,6 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>星禾元亨 · 文章</title>
+<meta name="description" content="星禾元亨AI自动化——文章详情" />
+<meta name="author" content="星禾元亨" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://xhyh.work/article.html" id="canonicalUrl" />
+<meta property="og:title" content="星禾元亨 · 文章" id="ogTitle" />
+<meta property="og:description" content="星禾元亨AI自动化——文章详情" id="ogDesc" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xhyh.work/article.html" id="ogUrl" />
+<meta property="og:site_name" content="星禾元亨AI自动化" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="article:published_time" content="" id="artPubTime" />
+<meta property="article:author" content="星禾元亨" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="星禾元亨 · 文章" id="twTitle" />
+<meta name="twitter:description" content="星禾元亨AI自动化——文章详情" id="twDesc" />
+<script type="application/ld+json" id="articleSchema">{"@context":"https://schema.org","@type":"Article"}</script>
+<script type="application/ld+json" id="breadcrumbSchema">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://xhyh.work/"},{"@type":"ListItem","position":2,"name":"文章列表","item":"https://xhyh.work/#articles"},{"@type":"ListItem","position":3,"name":"文章详情","item":"https://xhyh.work/article.html"}]}</script>
 <style>
 :root {
   --bg: #06080D; --bg2: #0C1020; --surface: #111827; --border: #1E293B;
@@ -223,6 +240,42 @@ async function loadArticle() {
     }
 
     document.title = article.title + ' · 星禾元亨';
+
+    // Update meta tags
+    const canonical = window.location.origin + window.location.pathname + '?id=' + id;
+    document.getElementById('canonicalUrl').href = canonical;
+    document.getElementById('ogUrl').content = canonical;
+    document.getElementById('ogTitle').content = article.title + ' · 星禾元亨';
+    document.getElementById('ogDesc').content = article.summary.replace(/\n/g,' ').substring(0,160);
+    document.getElementById('twTitle').content = article.title + ' · 星禾元亨';
+    document.getElementById('twDesc').content = article.summary.replace(/\n/g,' ').substring(0,160);
+    document.querySelector('meta[name="description"]').content = article.summary.replace(/\n/g,' ').substring(0,160);
+
+    // Article schema
+    const articleSchema = {
+      "@context":"https://schema.org","@type":"Article",
+      "headline":article.title,
+      "description":article.summary.split('\n')[0],
+      "datePublished":article.date,
+      "author":{"@type":"Organization","name":"星禾元亨","url":"https://xhyh.work/"},
+      "publisher":{"@type":"Organization","name":"星禾元亨","url":"https://xhyh.work/"},
+      "url":canonical,
+      "about":article.tags.join('、'),
+      "keywords":article.tags.join(',')
+    };
+    document.getElementById('articleSchema').textContent = JSON.stringify(articleSchema);
+
+    // Breadcrumb
+    const bc = {
+      "@context":"https://schema.org","@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"首页","item":"https://xhyh.work/"},
+        {"@type":"ListItem","position":2,"name":"文章列表","item":"https://xhyh.work/#articles"},
+        {"@type":"ListItem","position":3,"name":article.title,"item":canonical}
+      ]
+    };
+    document.getElementById('breadcrumbSchema').textContent = JSON.stringify(bc);
+
     container.innerHTML = `
       <div class="art-header">
         <div class="art-meta">

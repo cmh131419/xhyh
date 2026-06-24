@@ -4,6 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>星禾元亨 · 案例</title>
+<meta name="description" content="星禾元亨AI自动化——客户案例详情" />
+<meta name="author" content="星禾元亨" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://xhyh.work/case.html" id="canonicalUrl" />
+<meta property="og:title" content="星禾元亨 · 案例" id="ogTitle" />
+<meta property="og:description" content="星禾元亨AI自动化——客户案例详情" id="ogDesc" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xhyh.work/case.html" id="ogUrl" />
+<meta property="og:site_name" content="星禾元亨AI自动化" />
+<meta property="og:locale" content="zh_CN" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="星禾元亨 · 案例" id="twTitle" />
+<meta name="twitter:description" content="星禾元亨AI自动化——客户案例详情" id="twDesc" />
+<script type="application/ld+json" id="caseSchema">{"@context":"https://schema.org","@type":"Article"}</script>
+<script type="application/ld+json" id="breadcrumbSchema">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://xhyh.work/"},{"@type":"ListItem","position":2,"name":"案例列表","item":"https://xhyh.work/#cases"},{"@type":"ListItem","position":3,"name":"案例详情","item":"https://xhyh.work/case.html"}]}</script>
 <style>
 :root {
   --bg: #06080D; --bg2: #0C1020; --surface: #111827; --border: #1E293B;
@@ -209,7 +224,42 @@ async function loadCase() {
       return;
     }
 
-    document.title = c.title + ' · 星禾元亨';
+    document.title = c.title + ' · 星禾元亨 客户案例';
+
+    // Update meta tags
+    const canonical = window.location.origin + window.location.pathname + '?id=' + id;
+    document.getElementById('canonicalUrl').href = canonical;
+    document.getElementById('ogUrl').content = canonical;
+    document.getElementById('ogTitle').content = c.title + ' · 星禾元亨 客户案例';
+    document.getElementById('ogDesc').content = (c.desc || c.title).substring(0,160);
+    document.getElementById('twTitle').content = c.title + ' · 星禾元亨 客户案例';
+    document.getElementById('twDesc').content = (c.desc || c.title).substring(0,160);
+    document.querySelector('meta[name="description"]').content = (c.desc || c.title).substring(0,160);
+
+    // CaseStudy schema
+    const caseSchema = {
+      "@context":"https://schema.org","@type":"Article",
+      "headline":c.title,
+      "description":c.desc,
+      "about":c.tag,
+      "author":{"@type":"Organization","name":"星禾元亨","url":"https://xhyh.work/"},
+      "publisher":{"@type":"Organization","name":"星禾元亨","url":"https://xhyh.work/"},
+      "url":canonical,
+      "keywords":c.tag
+    };
+    document.getElementById('caseSchema').textContent = JSON.stringify(caseSchema);
+
+    // Breadcrumb
+    const bc = {
+      "@context":"https://schema.org","@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"首页","item":"https://xhyh.work/"},
+        {"@type":"ListItem","position":2,"name":"案例列表","item":"https://xhyh.work/#cases"},
+        {"@type":"ListItem","position":3,"name":c.title,"item":canonical}
+      ]
+    };
+    document.getElementById('breadcrumbSchema').textContent = JSON.stringify(bc);
+
     container.innerHTML = `
       <div class="case-hero">
         <div class="case-emoji">${c.emoji}</div>
