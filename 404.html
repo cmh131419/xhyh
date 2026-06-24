@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 | 星禾元亨</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:#0a0f1a;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center;
+  }
+  .wrap{max-width:600px;padding:40px 24px}
+  .code{font-size:120px;font-weight:900;background:linear-gradient(135deg,#00e67a,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1}
+  h1{font-size:24px;margin:16px 0 8px;color:#fff}
+  p{color:#8892a4;font-size:15px;line-height:1.7;margin-bottom:8px}
+  .links{margin-top:32px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  a{
+    display:inline-block;padding:10px 24px;border-radius:8px;text-decoration:none;font-size:14px;transition:all 0.2s;
+  }
+  .a1{background:#00e67a;color:#0a0f1a;font-weight:600}
+  .a1:hover{background:#00cc6a;transform:translateY(-1px)}
+  .a2{border:1px solid #2a3a5a;color:#00d4ff}
+  .a2:hover{border-color:#00d4ff;background:rgba(0,212,255,0.08)}
+  .term{margin-top:28px;padding:16px 20px;background:#0d1321;border-radius:8px;border:1px solid #1e2d4a;text-align:left;font-family:"SF Mono","Fira Code","Consolas",monospace;font-size:13px}
+  .term span{color:#00e67a}
+  .term .err{color:#ff6b6b}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="code">404</div>
+  <h1>页面未找到</h1>
+  <p>你访问的页面不存在，或者已经被移动。</p>
+  <p style="color:#556;font-size:13px">可能的原因：链接过期、输错地址、页面已下线</p>
+
+  <div class="term">
+    <span>xhyh@ai ~ $</span> curl https://xhyh.work/当前路径<br>
+    <span class="err">Error 404</span>: PAGE_NOT_FOUND<br>
+    <span>xhyh@ai ~ $</span> <span style="color:#00d4ff">cd /home</span><span class="cursor" style="animation:blink 1s step-end infinite;color:#00e67a;margin-left:2px">█</span>
+  </div>
+
+  <div class="links">
+    <a class="a1" href="/">🏠 返回首页</a>
+    <a class="a2" href="/#services">📦 看服务版块</a>
+    <a class="a2" href="/#articles">📝 看文章</a>
+  </div>
+</div>
+</body>
+</html>
