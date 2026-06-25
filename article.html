@@ -3,104 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>星禾元亨 · 文章</title>
+<title>星禾元亨 · 文章跳转中...</title>
+<meta name="robots" content="noindex,follow" />
 <meta name="description" content="星禾元亨AI自动化——文章详情" />
-<meta name="author" content="星禾元亨" />
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-<link rel="canonical" href="https://xhyh.work/article.html" id="canonicalUrl" />
-<meta property="og:title" content="星禾元亨 · 文章" id="ogTitle" />
-<meta property="og:description" content="星禾元亨AI自动化——文章详情" id="ogDesc" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://xhyh.work/article.html" id="ogUrl" />
-<meta property="og:site_name" content="星禾元亨AI自动化" />
-<meta property="og:locale" content="zh_CN" />
-<meta property="article:published_time" content="" id="artPubTime" />
-<meta property="article:author" content="星禾元亨" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="星禾元亨 · 文章" id="twTitle" />
-<meta name="twitter:description" content="星禾元亨AI自动化——文章详情" id="twDesc" />
-<script type="application/ld+json" id="articleSchema">{"@context":"https://schema.org","@type":"Article"}</script>
-<script type="application/ld+json" id="breadcrumbSchema">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://xhyh.work/"},{"@type":"ListItem","position":2,"name":"文章列表","item":"https://xhyh.work/#articles"},{"@type":"ListItem","position":3,"name":"文章详情","item":"https://xhyh.work/article.html"}]}</script>
+<noscript>
+  <meta http-equiv="refresh" content="0;url=https://xhyh.work/" />
+</noscript>
+<link rel="canonical" href="https://xhyh.work/" id="canonicalUrl" />
 <style>
-:root {
-  --bg: #06080D; --bg2: #0C1020; --surface: #111827; --border: #1E293B;
-  --green: #10B981; --text: #F1F5F9; --text2: #94A3B8; --text3: #64748B;
-  --radius: 16px; --radius-sm: 10px;
-}
-* { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior:smooth; }
-body {
-  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;
-  background: var(--bg); color: var(--text); line-height:1.75;
-  -webkit-font-smoothing:antialiased; min-height:100vh;
-}
-::selection { background: var(--green); color:#000; }
-
-/* Nav */
-.art-nav {
-  position:fixed; top:0; left:0; right:0; z-index:999;
-  background: rgba(6,8,13,0.85); backdrop-filter:blur(18px);
-  border-bottom:1px solid rgba(255,255,255,0.04);
-  padding:0 28px;
-}
-.art-nav-inner {
-  max-width:900px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; height:62px;
-}
-.art-nav a { color:var(--green); font-size:14px; font-weight:600; text-decoration:none; }
-.art-nav a:hover { text-decoration:underline; }
-
-/* Content */
-.art-wrap { max-width:800px; margin:0 auto; padding:100px 28px 80px; }
-
-.art-header { margin-bottom:40px; }
-.art-meta { display:flex; gap:16px; align-items:center; flex-wrap:wrap; margin-bottom:16px; }
-.art-date { font-size:13px; color:var(--text3); }
-.art-cat {
-  display:inline-block; font-size:11px; font-weight:700; padding:3px 12px; border-radius:12px;
-  background:rgba(16,185,129,0.1); color:var(--green);
-  text-transform:uppercase; letter-spacing:1px;
-}
-.art-header h1 { font-size:clamp(24px,4vw,36px); font-weight:900; line-height:1.3; letter-spacing:-0.5px; margin-bottom:16px; }
-.art-tags { display:flex; gap:8px; flex-wrap:wrap; }
-.art-tag {
-  font-size:11px; padding:4px 12px; border-radius:10px;
-  background:rgba(139,92,246,0.08); color:#8B5CF6;
-}
-
-.art-body { font-size:16px; color:var(--text2); line-height:1.95; }
-
-.art-body p { margin-bottom:18px; }
-.art-body h2 { font-size:22px; font-weight:800; color:var(--text); margin:44px 0 18px; }
-.art-body h3 { font-size:18px; font-weight:700; color:var(--text); margin:32px 0 14px; }
-.art-body h4 { font-size:16px; font-weight:700; color:var(--text); margin:24px 0 10px; }
-.art-body strong { color:var(--green); font-weight:600; }
-.art-body ul, .art-body ol { margin:16px 0; padding-left:24px; }
-.art-body li { margin-bottom:8px; }
-.art-body table { width:100%; border-collapse:collapse; margin:20px 0; font-size:14px; }
-.art-body th { background:var(--surface); color:var(--text); font-weight:700; padding:12px 16px; text-align:left; border:1px solid var(--border); }
-.art-body td { padding:10px 16px; border:1px solid var(--border); }
-.art-body blockquote {
-  border-left:3px solid var(--green); padding:12px 20px; margin:20px 0;
-  background:rgba(16,185,129,0.04); color:var(--text2); font-style:italic; border-radius:0 8px 8px 0;
-}
-.art-body code { background:var(--surface); padding:2px 6px; border-radius:4px; font-size:14px; }
-
-.art-back { margin-top:60px; padding-top:30px; border-top:1px solid var(--border); }
-.art-back a { color:var(--green); font-size:14px; font-weight:600; text-decoration:none; }
-.art-back a:hover { text-decoration:underline; }
-
-/* Footer */
-.art-foot { border-top:1px solid var(--border); padding:32px 28px; text-align:center; font-size:13px; color:var(--text3); }
-
-/* Loading / Error */
-.art-loading, .art-error { text-align:center; padding:120px 28px; }
-.art-error h2 { color:var(--text); margin-bottom:12px; }
-.art-error a { color:var(--green); }
-
-@media (max-width:640px) {
-  .art-wrap { padding:90px 18px 50px; }
-  .art-body { font-size:15px; }
-}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;background:#06080D;color:#94A3B8;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;text-align:center;}
+a{color:#10B981;text-decoration:none;}a:hover{text-decoration:underline;}
 </style>
 <script>
 var _hmt = _hmt || [];
@@ -113,203 +25,17 @@ var _hmt = _hmt || [];
 </script>
 </head>
 <body>
-
-<nav class="art-nav">
-  <div class="art-nav-inner">
-    <a href="index.html" style="color:var(--text);font-size:16px;"><span style="color:var(--green)">星禾元亨</span> · AI自动化</a>
-    <a href="index.html#articles">← 返回文章列表</a>
-  </div>
-</nav>
-
-<main class="art-wrap" id="articleContent">
-  <div class="art-loading" style="padding:60px;text-align:center;color:var(--text3);">加载中...</div>
-</main>
-
-<footer class="art-foot">
-  © 2026 星禾元亨AI自动化 · 深圳
-</footer>
-
 <script>
-function parseContent(text) {
-  if (!text) return '';
-  const lines = text.split('\n');
-  let html = '';
-  let inList = null;
-
-  for (let line of lines) {
-    const trimmed = line.trim();
-    if (!trimmed) {
-      if (inList) { html += `</${inList}>`; inList = null; }
-      continue;
-    }
-
-    // Code block
-    if (trimmed.startsWith('```')) {
-      if (inList) { html += `</${inList}>`; inList = null; }
-      html += '<pre style="background:var(--surface);padding:16px;border-radius:8px;overflow-x:auto;font-size:13px;margin:16px 0;"><code>';
-      continue;
-    }
-    if (trimmed === '```') {
-      html += '</code></pre>';
-      continue;
-    }
-
-    // Table
-    if (trimmed.startsWith('|')) {
-      if (inList) { html += `</${inList}>`; inList = null; }
-      const cells = trimmed.split('|').filter(c => c.trim());
-      if (cells.every(c => /^[-:]+$/.test(c.trim()))) continue;
-      const isHeader = !html.includes('<table>') || html.lastIndexOf('</table>') > html.lastIndexOf('<table>');
-      if (!html.endsWith('</table>') && !html.match(/<table>[^<]*$/)) {
-        html += '<table>';
-      }
-      html += '<tr>';
-      cells.forEach(c => html += isHeader ? `<th>${c.trim()}</th>` : `<td>${c.trim()}</td>`);
-      html += '</tr>';
-      if (html.split('<table>').length > html.split('</table>').length + 1) {
-        // close table if next line is not table
-      }
-      continue;
-    }
-    // Close table if needed
-    if (!trimmed.startsWith('|') && html.lastIndexOf('<table>') > html.lastIndexOf('</table>')) {
-      html += '</table>';
-    }
-
-    // Headings
-    if (trimmed.startsWith('### ')) {
-      if (inList) { html += `</${inList}>`; inList = null; }
-      html += `<h3>${trimmed.slice(4)}</h3>`;
-      continue;
-    }
-    if (trimmed.startsWith('## ')) {
-      if (inList) { html += `</${inList}>`; inList = null; }
-      html += `<h2>${trimmed.slice(3)}</h2>`;
-      continue;
-    }
-    if (trimmed.startsWith('# ')) {
-      if (inList) { html += `</${inList}>`; inList = null; }
-      html += `<h2>${trimmed.slice(2)}</h2>`;
-      continue;
-    }
-
-    // Bold emphasis: **text**
-    let processed = trimmed.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-
-    // Blockquote
-    if (processed.startsWith('> ')) {
-      if (inList) { html += `</${inList}>`; inList = null; }
-      html += `<blockquote>${processed.slice(2)}</blockquote>`;
-      continue;
-    }
-
-    // Unordered list
-    if (/^[-*]\s/.test(processed)) {
-      if (inList !== 'ul') { if (inList) html += `</${inList}>`; html += '<ul>'; inList = 'ul'; }
-      html += `<li>${processed.replace(/^[-*]\s/, '')}</li>`;
-      continue;
-    }
-
-    // Ordered list
-    if (/^\d+\.\s/.test(processed)) {
-      if (inList !== 'ol') { if (inList) html += `</${inList}>`; html += '<ol>'; inList = 'ol'; }
-      html += `<li>${processed.replace(/^\d+\.\s/, '')}</li>`;
-      continue;
-    }
-
-    // Paragraph
-    if (inList) { html += `</${inList}>`; inList = null; }
-    html += `<p>${processed}</p>`;
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var id = parseInt(params.get('id'));
+  if (id && id >= 1 && id <= 9) {
+    window.location.replace('https://xhyh.work/article-' + id + '.html');
+  } else {
+    window.location.replace('https://xhyh.work/#articles');
   }
-
-  if (inList) html += `</${inList}>`;
-  // Close any open table
-  if (html.lastIndexOf('<table>') > html.lastIndexOf('</table>')) html += '</table>';
-  return html;
-}
-
-async function loadArticle() {
-  const params = new URLSearchParams(window.location.search);
-  const id = parseInt(params.get('id'));
-  const container = document.getElementById('articleContent');
-
-  if (!id) {
-    container.innerHTML = '<div class="art-error"><h2>文章未找到</h2><p><a href="index.html#articles">← 返回文章列表</a></p></div>';
-    return;
-  }
-
-  try {
-    const res = await fetch('data/articles.json');
-    const articles = await res.json();
-    const article = articles.find(a => a.id === id);
-
-    if (!article) {
-      container.innerHTML = '<div class="art-error"><h2>文章未找到</h2><p><a href="index.html#articles">← 返回文章列表</a></p></div>';
-      return;
-    }
-
-    document.title = article.title + ' · 星禾元亨';
-
-    // Update meta tags
-    const canonical = window.location.origin + window.location.pathname + '?id=' + id;
-    document.getElementById('canonicalUrl').href = canonical;
-    document.getElementById('ogUrl').content = canonical;
-    document.getElementById('ogTitle').content = article.title + ' · 星禾元亨';
-    document.getElementById('ogDesc').content = article.summary.replace(/\n/g,' ').substring(0,160);
-    document.getElementById('twTitle').content = article.title + ' · 星禾元亨';
-    document.getElementById('twDesc').content = article.summary.replace(/\n/g,' ').substring(0,160);
-    document.querySelector('meta[name="description"]').content = article.summary.replace(/\n/g,' ').substring(0,160);
-
-    // Article schema
-    const articleSchema = {
-      "@context":"https://schema.org","@type":"Article",
-      "headline":article.title,
-      "description":article.summary.split('\n')[0],
-      "datePublished":article.date,
-      "author":{"@type":"Organization","name":"星禾元亨","url":"https://xhyh.work/"},
-      "publisher":{"@type":"Organization","name":"星禾元亨","url":"https://xhyh.work/"},
-      "url":canonical,
-      "about":article.tags.join('、'),
-      "keywords":article.tags.join(',')
-    };
-    document.getElementById('articleSchema').textContent = JSON.stringify(articleSchema);
-
-    // Breadcrumb
-    const bc = {
-      "@context":"https://schema.org","@type":"BreadcrumbList",
-      "itemListElement":[
-        {"@type":"ListItem","position":1,"name":"首页","item":"https://xhyh.work/"},
-        {"@type":"ListItem","position":2,"name":"文章列表","item":"https://xhyh.work/#articles"},
-        {"@type":"ListItem","position":3,"name":article.title,"item":canonical}
-      ]
-    };
-    document.getElementById('breadcrumbSchema').textContent = JSON.stringify(bc);
-
-    container.innerHTML = `
-      <div class="art-header">
-        <div class="art-meta">
-          <span class="art-date">📅 ${article.date}</span>
-          <span class="art-cat">${article.category}</span>
-        </div>
-        <h1>${article.title}</h1>
-        <div class="art-tags">
-          ${article.tags.map(t => `<span class="art-tag">${t}</span>`).join('')}
-        </div>
-      </div>
-      <div class="art-body">
-        ${parseContent(article.content || article.summary)}
-      </div>
-      <div class="art-back">
-        <a href="index.html#articles">← 返回文章列表</a>
-      </div>
-    `;
-  } catch(e) {
-    container.innerHTML = '<div class="art-error"><h2>加载失败</h2><p><a href="index.html#articles">← 返回文章列表</a></p></div>';
-  }
-}
-
-document.addEventListener('DOMContentLoaded', loadArticle);
+})();
 </script>
-
+<p>页面跳转中...<br><small>如果没有自动跳转，请点击 <a href="https://xhyh.work/#articles">文章列表</a></small></p>
 </body>
 </html>
