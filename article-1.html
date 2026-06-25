@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>通义千问API怎么用最省钱？Token代理帮你省一半 | 星禾元亨 · AI自动化</title>
+<meta name="description" content="从计费模式到额度管理，一篇讲透企业级Token成本优化方案。月耗2亿Token的实战经验总结。" />
+<meta name="keywords" content="Token代理, 成本优化, 实战,Token代理,星禾元亨,AI自动化" />
+<link rel="canonical" href="https://xhyh.work/article-1.html" />
+<meta name="google-site-verification" content="X4GB4L_W_sGID3pymBNODfn6bTX2UU99N_1yR1ZkntU" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="通义千问API怎么用最省钱？Token代理帮你省一半" />
+<meta property="og:description" content="从计费模式到额度管理，一篇讲透企业级Token成本优化方案。月耗2亿Token的实战经验总结。" />
+<meta property="og:url" content="https://xhyh.work/article-1.html" />
+<meta property="og:image" content="https://xhyh.work/images/og-image.png" />
+<meta property="og:site_name" content="星禾元亨" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="通义千问API怎么用最省钱？Token代理帮你省一半" />
+<meta name="twitter:description" content="从计费模式到额度管理，一篇讲透企业级Token成本优化方案。月耗2亿Token的实战经验总结。" />
+<meta name="twitter:image" content="https://xhyh.work/images/og-image.png" />
+
+<!-- Google Analytics（统一）-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXX');
+</script>
+
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c8b7c967271105ca9d54b4d125df2299";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<style>
+*:{box-sizing:border-box;margin:0;padding:0}
+body{background:#06080D;color:#e6edf8;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.8}
+a{color:#00d4ff;text-decoration:none}
+a:hover{text-decoration:underline}
+header{background:#0d1321;border-bottom:1px solid #1a2236;padding:16px 24px;display:flex;align-items:center;gap:16px}
+header a{color:#8892a4;font-size:14px}
+header a:hover{color:#00e67a}
+.article-container{max-width:780px;margin:0 auto;padding:48px 24px 80px}
+.article-meta{display:flex;gap:12px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.article-tag{background:#00e67a;color:#06080D;font-size:12px;font-weight:700;padding:3px 10px;border-radius:4px}
+.article-date{color:#8892a4;font-size:13px}
+.article-title{font-size:28px;font-weight:800;color:#f0f6fc;margin:12px 0 16px;line-height:1.4}
+.article-summary{color:#8892a4;font-size:15px;margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid #1a2236}
+.article-body{font-size:15.5px;color:#c9d1d9;line-height:1.9}
+.article-body h2{font-size:20px;color:#f0f6fc;margin:32px 0 12px;padding-left:12px;border-left:3px solid #00e67a}
+.article-body h3{font-size:17px;color:#00e67a;margin:24px 0 10px}
+.article-body p{margin-bottom:16px}
+.article-body ul,.article-body ol{margin:12px 0 12px 24px}
+.article-body li{margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+.article-body th{background:#1a2236;color:#00e67a;padding:8px 12px;text-align:left}
+.article-body td{padding:8px 12px;border-bottom:1px solid #1a2236}
+.article-body code{background:#1a2236;color:#00e67a;padding:2px 6px;border-radius:3px;font-size:13px}
+.article-body pre{background:#1a2236;padding:16px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px;line-height:1.6}
+.article-body blockquote{border-left:3px solid #00e67a;padding:12px 16px;background:#0d1321;margin:16px 0;color:#8b949e;font-style:italic}
+.related{margin-top:40px;padding:16px 20px;background:#0d1321;border-left:3px solid #00e67a;border-radius:6px;font-size:14px;color:#8892a4}
+.related strong{color:#00e67a}
+.footer{text-align:center;padding:40px 24px;color:#57606a;font-size:13px;border-top:1px solid #1a2236;max-width:780px;margin:0 auto}
+@media(max-width:600px){.article-title{font-size:22px}}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/">← 首页</a>
+  <span style="color:#1a2236">|</span>
+  <a href="/">星禾元亨 · AI自动化</a>
+</header>
+
+<main class="article-container">
+  <div class="article-meta">
+    <span class="article-tag">Token代理</span>
+    <span class="article-date">每周更新</span>
+  </div>
+  <h1 class="article-title">通义千问API怎么用最省钱？Token代理帮你省一半</h1>
+  <p class="article-summary">从计费模式到额度管理，一篇讲透企业级Token成本优化方案。月耗2亿Token的实战经验总结。</p>
+
+  <article class="article-body">
+<p>做AI应用开发的朋友都知道，Token就是硬通货。但绝大多数公司根本用不到最优价——不是因为用量不够大，而是没搞清楚通义千问的计费逻辑。</p>
+
+<p>先说一个扎心的事实：绝大多数中小团队在API上多花了40%-60%的冤枉钱，自己还不知道。</p>
+
+<p>### 计费模式的水很深</p>
+
+<p>通义千问的计费不是简单按token数量算的。不同模型价格差异巨大，qwen-turbo和qwen-max的价格可能差一个数量级。很多团队一开始图省事直接用Max，但90%的场景Turbo完全够用。</p>
+
+<p>更重要的是——**额度批发价和零售价根本不是一回事**。你自己去阿里云开API，拿的是零售价。通过Token代理走批发渠道，价格直接砍一半甚至更多。</p>
+
+<p>### 用量监控是第一步</p>
+
+<p>我们帮客户做的第一件事永远是接用量监控看板。不看不知道，一看吓一跳：</p>
+
+<p>- 40%的Token消耗在重复请求上 - 25%的调用可以合并批处理 - 15%的Prompt过长，白白浪费</p>
+
+<p>这些问题不改，再便宜的API也烧不起。</p>
+
+<p>### 额度管理的核心</p>
+
+<p>不是设个上限就完了。我们给企业客户做的智能额度管理系统包含：</p>
+
+<p>1. **按部门/项目分配额度**——谁用多少一目了然 2. **动态调度**——闲时自动囤积Token，忙时按优先级分配 3. **异常预警**——调用量突增立刻通知，防止被刷</p>
+
+<p>### 省钱到底能省多少？</p>
+
+<p>以月耗3000万Token的中型团队为例： - 零售价：约¥1.5万-2万/月 - Token代理批发价：约¥7,000-9,000/月 - 加上用量优化：实际成本可压到¥5,000以下</p>
+
+<p>一年多省十几万，够再雇一个人了。</p>
+
+<p>### 怎么开始？</p>
+
+<p>不需要懂技术。给我们你的用量数据，我们出方案，你确认，当天就能切过去。全程不影响业务。</p>
+
+<p>省下来的钱，才是你真正赚到的。</p>
+<p style="margin-top:32px;padding:16px 20px;background:#0d1321;border-left:3px solid #00e67a;border-radius:6px;font-size:14px;color:#8892a4;"><strong style="color:#00e67a;">📎 相关阅读</strong><br>· <a href="article.html?id=6" style="color:#00d4ff;text-decoration:none;">企业级Token代理怎么选？5个维度帮你避坑</a><br>· <a href="article.html?id=2" style="color:#00d4ff;text-decoration:none;">AI替代不了人？AI岗位自动化落地全流程</a><br></p>
+  </article>
+
+  <div class="related">
+    <strong>📎 相关阅读</strong><br/>
+    <a href="/">返回首页查看更多文章 →</a>
+  </div>
+</main>
+
+<footer class="footer">
+  © 2026 深圳市星禾元亨智能科技有限公司 &nbsp;|&nbsp;
+  <a href="/" style="color:#57606a">xhyh.work</a> &nbsp;|&nbsp; 粤ICP备XXXXXXXX号
+</footer>
+
+<!-- Article JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "通义千问API怎么用最省钱？Token代理帮你省一半",
+  "description": "从计费模式到额度管理，一篇讲透企业级Token成本优化方案。月耗2亿Token的实战经验总结。",
+  "author": {
+    "@type": "Person",
+    "name": "司远",
+    "jobTitle": "星禾元亨创始人"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "星禾元亨",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhyh.work/images/favicon.png"
+    }
+  },
+  "datePublished": "每周更新",
+  "dateModified": "每周更新",
+  "mainEntityOfPage": "https://xhyh.work/article-1.html",
+  "keywords": "Token代理, 成本优化, 实战"
+}
+</script>
+
+<!-- FAQ JSON-LD (if applicable) -->
+
+
+</body>
+</html>
