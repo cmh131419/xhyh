@@ -28,6 +28,17 @@ h1{font-size:28px;font-weight:700;line-height:1.4;margin-bottom:16px;color:#f0f6
 .article-body h2{font-size:20px;font-weight:600;margin:32px 0 16px;color:#f0f6fc;}
 .article-body h3{font-size:17px;font-weight:600;margin:24px 0 12px;color:#f0f6fc;}
 .article-body p{margin-bottom:16px;}
+/* 更多推荐 */
+.more-section{margin-top:48px;padding-top:32px;border-top:1px solid #21262d;}
+.more-section h2{font-size:18px;color:#f0f6fc;margin-bottom:20px;}
+.more-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.more-card{background:#0d1321;border:1px solid #21262d;border-radius:10px;padding:20px;text-decoration:none;color:inherit;display:block;transition:border-color .2s,transform .2s;}
+.more-card:hover{border-color:#00e67a50;transform:translateY(-2px);}
+.more-card-tag{display:inline-block;background:#00e67a15;color:#00e67a;padding:2px 10px;border-radius:12px;font-size:11px;margin-bottom:10px;border:1px solid #00e67a30;}
+.more-card h3{font-size:15px;color:#e6edf8;margin-bottom:8px;line-height:1.5;}
+.more-card p{font-size:12px;color:#6e7681;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+@media(max-width:768px){.more-grid{grid-template-columns:1fr;}}
+
 .article-body strong{color:#f0f6fc;}
 .article-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;}
 .article-body th,.article-body td{border:1px solid #21262d;padding:8px 12px;text-align:left;}
@@ -146,6 +157,26 @@ AI服务的价值不在于你花了多少时间，而在于客户省了多少成
 AI服务这个赛道，降价永远有人比你更便宜，但把事情做深做透的永远是少数。定价的信心来自于你知道自己交付的价值。
 <p style="margin-top:32px;padding:16px 20px;background:#0d1321;border-left:3px solid #00e67a;border-radius:6px;font-size:14px;color:#8892a4;"><strong style="color:#00e67a;">📎 相关阅读</strong><br>· <a href="article-4" style="color:#00d4ff;text-decoration:none;">在深圳创业，隐性优势很少人说</a><br></p>
 </div>
+<section class="more-section">
+<h2>📚 更多推荐</h2>
+<div class="more-grid">
+<a href="article-4.html" class="more-card">
+  <span class="more-card-tag">创业心得</span>
+  <h3>在深圳创业，隐性优势很少人说</h3>
+  <p>入局门槛看着极低，活下去却格外难。深圳配套省心、客户扎堆、政策放水，但8成通用方案同质化——只卖API赚不到钱。深耕岗位...</p>
+</a>
+<a href="article-2.html" class="more-card">
+  <span class="more-card-tag">AI岗位自动化</span>
+  <h3>AI替代不了人？那是你没装对——AI岗位自动化落地全流程</h3>
+  <p>从客服到内容运营，4个岗位的AI化方案，真实企业案例拆解。不是概念，是能跑的流水线。</p>
+</a>
+<a href="article-8.html" class="more-card">
+  <span class="more-card-tag">GEO获客</span>
+  <h3>一人公司怎么做GEO？零预算冷启动全攻略</h3>
+  <p>没有团队、没有预算也能做GEO。从平台选择到内容策略到数据复盘，一个人30天跑通GEO获客闭环的实操手册。</p>
+</a>
+</div>
+</section>
 </main>
 <footer>
   <p>© 2026 星禾元亨 · <a href="https://xhyh.work/">xhyh.work</a> · 181-2734-6686</p>
