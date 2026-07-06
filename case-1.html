@@ -1,102 +1,116 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>深圳某AI初创公司 | 星禾元亨 · 客户案例</title>
 <meta name="description" content="接入通义千问API代理后，Token成本降低58%，月消耗从500万涨到3000万，产品迭代速度翻倍。" />
+<meta name="keywords" content="TOB · Token代理,客户案例,星禾元亨,AI自动化" />
 <link rel="canonical" href="https://xhyh.work/case-1.html" />
-<meta property="og:title" content="深圳某AI初创公司 | 星禾元亨" />
-<meta property="og:description" content="接入通义千问API代理后，Token成本降低58%，月消耗从500万涨到3000万，产品迭代速度翻倍。" />
+<meta name="google-site-verification" content="X4GB4L_W_sGID3pymBNODfn6bTX2UU99N_1yR1ZkntU" />
+
+<!-- Open Graph -->
 <meta property="og:type" content="article" />
+<meta property="og:title" content="深圳某AI初创公司 - 星禾元亨客户案例" />
+<meta property="og:description" content="接入通义千问API代理后，Token成本降低58%，月消耗从500万涨到3000万，产品迭代速度翻倍。" />
 <meta property="og:url" content="https://xhyh.work/case-1.html" />
 <meta property="og:image" content="https://xhyh.work/images/og-image.png" />
+<meta property="og:site_name" content="星禾元亨" />
+
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c8b7c967271105ca9d54b4d125df2299";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#06080D;color:#e6edf8;line-height:1.8;}
-main{max-width:800px;margin:0 auto;padding:120px 24px 80px;}
-.back-link{display:inline-block;margin-bottom:32px;color:#00e67a;text-decoration:none;font-size:14px;}
-.back-link:hover{text-decoration:underline;}
-.case-tag{display:inline-block;background:#00e67a15;color:#00e67a;padding:4px 12px;border-radius:20px;font-size:12px;margin-bottom:16px;border:1px solid #00e67a30;}
-h1{font-size:28px;font-weight:700;line-height:1.4;margin-bottom:8px;color:#f0f6fc;}
-.case-desc{font-size:15px;color:#8b949e;margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid #21262d;}
-.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin:24px 0;}
-.kpi-card{background:#0d1321;border:1px solid #21262d;border-radius:8px;padding:20px;text-align:center;}
-.kpi-val{font-size:28px;font-weight:700;color:#00e67a;}
-.kpi-lbl{font-size:12px;color:#6e7681;margin-top:4px;}
-.case-body{font-size:15px;color:#c9d1d9;margin-top:24px;}
-.case-body h3{font-size:17px;font-weight:600;margin:24px 0 12px;color:#f0f6fc;}
-.case-body p{margin-bottom:16px;}
-.case-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;}
-.case-body th,.case-body td{border:1px solid #21262d;padding:8px 12px;text-align:left;}
-.case-body th{background:#0d1321;color:#00e67a;}
-footer{text-align:center;padding:40px 24px;color:#6e7681;font-size:13px;}
-footer a{color:#00e67a;text-decoration:none;}
-@media(max-width:600px){h1{font-size:22px;}}
+*:{box-sizing:border-box;margin:0;padding:0}
+body{background:#06080D;color:#e6edf8;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.8}
+a{color:#00d4ff;text-decoration:none}
+a:hover{text-decoration:underline}
+header{background:#0d1321;border-bottom:1px solid #1a2236;padding:16px 24px;display:flex;align-items:center;gap:16px}
+header a{color:#8892a4;font-size:14px}
+header a:hover{color:#00e67a}
+.case-container{max-width:780px;margin:0 auto;padding:48px 24px 80px}
+.case-tag{background:#00e67a;color:#06080D;font-size:12px;font-weight:700;padding:3px 10px;border-radius:4px;display:inline-block;margin-bottom:12px}
+.case-title{font-size:28px;font-weight:800;color:#f0f6fc;margin-bottom:16px;line-height:1.4}
+.case-desc{color:#8892a4;font-size:15px;margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid #1a2236}
+.case-body{font-size:15.5px;color:#c9d1d9;line-height:1.9}
+.case-body h3{font-size:17px;color:#00e67a;margin:24px 0 10px}
+.case-body h4{font-size:15px;color:#f0f6fc;margin:16px 0 8px}
+.case-body p{margin-bottom:16px}
+.case-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+.case-body th{background:#1a2236;color:#00e67a;padding:8px 12px;text-align:left}
+.case-body td{padding:8px 12px;border-bottom:1px solid #1a2236}
+.footer{text-align:center;padding:40px 24px;color:#57606a;font-size:13px;border-top:1px solid #1a2236;max-width:780px;margin:0 auto}
+@media(max-width:600px){.case-title{font-size:22px}}
 </style>
+</head>
+<body>
+
+<header>
+  <a href="/">← 首页</a>
+  <span style="color:#1a2236">|</span>
+  <a href="/">星禾元亨 · AI自动化</a>
+</header>
+
+<main class="case-container">
+  <div class="case-tag">💎 TOB · Token代理</div>
+  <h1 class="case-title">深圳某AI初创公司</h1>
+  <p class="case-desc">接入通义千问API代理后，Token成本降低58%，月消耗从500万涨到3000万，产品迭代速度翻倍。</p>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0;padding:20px;background:#0d1321;border-radius:10px"><div style="text-align:center;padding:16px"><div style="font-size:28px;font-weight:800;color:#00e67a">-58%</div><div style="font-size:13px;color:#8892a4;margin-top:4px">Token成本</div></div><div style="text-align:center;padding:16px"><div style="font-size:28px;font-weight:800;color:#00e67a">6x</div><div style="font-size:13px;color:#8892a4;margin-top:4px">用量增长</div></div><div style="text-align:center;padding:16px"><div style="font-size:28px;font-weight:800;color:#00e67a">2x</div><div style="font-size:13px;color:#8892a4;margin-top:4px">迭代提速</div></div></div>
+
+  <article class="case-body">
+<p>### 客户背景</p>
+
+<p>深圳本地AI创业公司，做面向B端的智能客服SaaS产品。核心产品依赖通义千问API进行对话生成，月Token消耗约500万。</p>
+
+<p>### 遇到的痛点</p>
+
+<p>1. **成本失控**：直接走阿里云零售价，月Token费用超过预算1.5倍 2. **用量不可视**：不知道哪些调用在浪费Token，哪些该优化 3. **弹性不足**：业务高峰期Token不够用，低谷期又在浪费额度</p>
+
+<p>### 我们的方案</p>
+
+<p>- 切换到Token代理批发渠道，单价直降58% - 部署用量监控看板，识别出40%的重复/冗余调用 - 智能额度调度：闲时囤Token，忙时按优先级分配 - 分项目/分模块建立额度池，产品迭代不再互相影响</p>
+
+<p>### 量化成果</p>
+
+<p>| 指标 | 优化前 | 优化后 | |------|--------|--------| | 月Token成本 | ¥8,500 | ¥3,500 | | 月Token用量 | 500万 | 3000万 | | 产品迭代周期 | 14天 | 7天 |</p>
+
+<p>客户反馈："以前每天盯着账单发愁，现在完全不操心成本，只管做产品。"</p>
+
+<p>### 数据口径</p>
+
+<p>以上数据基于2025年Q3客户实际使用记录，Token消耗数据来自通义千问控制台导出，成本数据为客户提供的财务报表。优化后数据为上线后30天（2025年9月1日-9月30日）平均值。客户名称为化名，业务数据已获授权使用。</p>
+  </article>
+</main>
+
+<footer class="footer">
+  © 2026 深圳市星禾元亨智能科技有限公司 &nbsp;|&nbsp;
+  <a href="/" style="color:#57606a">xhyh.work</a>
+</footer>
+
+<!-- CaseStudy JSON-LD -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "CaseStudy",
   "name": "深圳某AI初创公司",
   "description": "接入通义千问API代理后，Token成本降低58%，月消耗从500万涨到3000万，产品迭代速度翻倍。",
-  "author": {"@type": "Person", "name": "司远"},
-  "datePublished": "2026-06-01",
-  "publisher": {
+  "author": {
     "@type": "Organization",
-    "name": "星禾元亨",
-    "url": "https://xhyh.work"
-  }
+    "name": "星禾元亨"
+  },
+  "datePublished": "2026-06-24",
+  "url": "https://xhyh.work/case-1.html"
 }
 </script>
-</head>
-<body>
-<main>
-<a class="back-link" href="https://xhyh.work/">← 返回首页</a>
-<div class="case-tag">TOB · Token代理</div>
-<h1>💎 深圳某AI初创公司</h1>
-<p class="case-desc">接入通义千问API代理后，Token成本降低58%，月消耗从500万涨到3000万，产品迭代速度翻倍。</p>
-<div class="kpi-grid">
-  <div class="kpi-card"><div class="kpi-val">-58%</div><div class="kpi-lbl">Token成本</div></div>
-  <div class="kpi-card"><div class="kpi-val">6x</div><div class="kpi-lbl">用量增长</div></div>
-  <div class="kpi-card"><div class="kpi-val">2x</div><div class="kpi-lbl">迭代提速</div></div>
 
-</div>
-<div class="case-body">
-### 客户背景
-
-深圳本地AI创业公司，做面向B端的智能客服SaaS产品。核心产品依赖通义千问API进行对话生成，月Token消耗约500万。
-
-### 遇到的痛点
-
-1. **成本失控**：直接走阿里云零售价，月Token费用超过预算1.5倍
-2. **用量不可视**：不知道哪些调用在浪费Token，哪些该优化
-3. **弹性不足**：业务高峰期Token不够用，低谷期又在浪费额度
-
-### 我们的方案
-
-- 切换到Token代理批发渠道，单价直降58%
-- 部署用量监控看板，识别出40%的重复/冗余调用
-- 智能额度调度：闲时囤Token，忙时按优先级分配
-- 分项目/分模块建立额度池，产品迭代不再互相影响
-
-### 量化成果
-
-| 指标 | 优化前 | 优化后 |
-|------|--------|--------|
-| 月Token成本 | ¥8,500 | ¥3,500 |
-| 月Token用量 | 500万 | 3000万 |
-| 产品迭代周期 | 14天 | 7天 |
-
-客户反馈："以前每天盯着账单发愁，现在完全不操心成本，只管做产品。"
-
-### 数据口径
-
-以上数据基于2025年Q3客户实际使用记录，Token消耗数据来自通义千问控制台导出，成本数据为客户提供的财务报表。优化后数据为上线后30天（2025年9月1日-9月30日）平均值。客户名称为化名，业务数据已获授权使用。
-</div>
-</main>
-<footer>
-  <p>© 2026 星禾元亨 · <a href="https://xhyh.work/">xhyh.work</a> · 181-2734-6686</p>
-</footer>
 </body>
 </html>

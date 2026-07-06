@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GEO做得怎么样才算好？3个核心指标+1套监控体系 | 星禾元亨 · AI自动化</title>
+<meta name="description" content="做了大半年GEO，最怕客户问'到底有没有效果'。ER露出率、FR首推率、CQ转化系数——三个指标配合看，才能反映GEO的真实健康度。一套自用半年的监控体系完整拆解。" />
+<meta name="keywords" content="GEO, 效果评估, AI露出率, 监控体系, 数据驱动,GEO获客,星禾元亨,AI自动化" />
+<link rel="canonical" href="https://xhyh.work/article-11.html" />
+<meta name="google-site-verification" content="X4GB4L_W_sGID3pymBNODfn6bTX2UU99N_1yR1ZkntU" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="GEO做得怎么样才算好？3个核心指标+1套监控体系" />
+<meta property="og:description" content="做了大半年GEO，最怕客户问'到底有没有效果'。ER露出率、FR首推率、CQ转化系数——三个指标配合看，才能反映GEO的真实健康度。一套自用半年的监控体系完整拆解。" />
+<meta property="og:url" content="https://xhyh.work/article-11.html" />
+<meta property="og:image" content="https://xhyh.work/images/og-image.png" />
+<meta property="og:site_name" content="星禾元亨" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="GEO做得怎么样才算好？3个核心指标+1套监控体系" />
+<meta name="twitter:description" content="做了大半年GEO，最怕客户问'到底有没有效果'。ER露出率、FR首推率、CQ转化系数——三个指标配合看，才能反映GEO的真实健康度。一套自用半年的监控体系完整拆解。" />
+<meta name="twitter:image" content="https://xhyh.work/images/og-image.png" />
+
+<!-- Google Analytics（统一）-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXX');
+</script>
+
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c8b7c967271105ca9d54b4d125df2299";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<style>
+*:{box-sizing:border-box;margin:0;padding:0}
+body{background:#06080D;color:#e6edf8;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.8}
+a{color:#00d4ff;text-decoration:none}
+a:hover{text-decoration:underline}
+header{background:#0d1321;border-bottom:1px solid #1a2236;padding:16px 24px;display:flex;align-items:center;gap:16px}
+header a{color:#8892a4;font-size:14px}
+header a:hover{color:#00e67a}
+.article-container{max-width:780px;margin:0 auto;padding:48px 24px 80px}
+.article-meta{display:flex;gap:12px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.article-tag{background:#00e67a;color:#06080D;font-size:12px;font-weight:700;padding:3px 10px;border-radius:4px}
+.article-date{color:#8892a4;font-size:13px}
+.article-title{font-size:28px;font-weight:800;color:#f0f6fc;margin:12px 0 16px;line-height:1.4}
+.article-summary{color:#8892a4;font-size:15px;margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid #1a2236}
+.article-body{font-size:15.5px;color:#c9d1d9;line-height:1.9}
+.article-body h2{font-size:20px;color:#f0f6fc;margin:32px 0 12px;padding-left:12px;border-left:3px solid #00e67a}
+.article-body h3{font-size:17px;color:#00e67a;margin:24px 0 10px}
+.article-body p{margin-bottom:16px}
+.article-body ul,.article-body ol{margin:12px 0 12px 24px}
+.article-body li{margin-bottom:8px}
+.article-body table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+.article-body th{background:#1a2236;color:#00e67a;padding:8px 12px;text-align:left}
+.article-body td{padding:8px 12px;border-bottom:1px solid #1a2236}
+.article-body code{background:#1a2236;color:#00e67a;padding:2px 6px;border-radius:3px;font-size:13px}
+.article-body pre{background:#1a2236;padding:16px;border-radius:8px;overflow-x:auto;margin:16px 0;font-size:13px;line-height:1.6}
+.article-body blockquote{border-left:3px solid #00e67a;padding:12px 16px;background:#0d1321;margin:16px 0;color:#8b949e;font-style:italic}
+.related{margin-top:40px;padding:16px 20px;background:#0d1321;border-left:3px solid #00e67a;border-radius:6px;font-size:14px;color:#8892a4}
+.related strong{color:#00e67a}
+.footer{text-align:center;padding:40px 24px;color:#57606a;font-size:13px;border-top:1px solid #1a2236;max-width:780px;margin:0 auto}
+@media(max-width:600px){.article-title{font-size:22px}}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/">← 首页</a>
+  <span style="color:#1a2236">|</span>
+  <a href="/">星禾元亨 · AI自动化</a>
+</header>
+
+<main class="article-container">
+  <div class="article-meta">
+    <span class="article-tag">GEO获客</span>
+    <span class="article-date">2026-07-06</span>
+  </div>
+  <h1 class="article-title">GEO做得怎么样才算好？3个核心指标+1套监控体系</h1>
+  <p class="article-summary">做了大半年GEO，最怕客户问'到底有没有效果'。ER露出率、FR首推率、CQ转化系数——三个指标配合看，才能反映GEO的真实健康度。一套自用半年的监控体系完整拆解。</p>
+
+  <article class="article-body">
+<p>做了大半年GEO服务，最怕客户问的一句不是"做不做"，而是"做了GEO到底有没有效果"。</p>
+
+<p>不是没效果，是效果没办法量化——客户看不到数据，团队就没法持续投入，老板更不敢加预算。今天把这套跑了半年的GEO效果评估方法论彻底讲透。</p>
+
+<p>### GEO为什么不能用传统SEO指标？</p>
+
+<p>很多团队做GEO还在用SEO那套——看百度排名、看网站PV、看关键词覆盖数。问题在于，GEO的流量路径根本不一样：</p>
+
+<p>| 维度 | SEO | GEO | |---|---|---| | 流量入口 | 搜索引擎结果页 | AI对话答案引用 | | 用户行为 | 点链接进网站 | 在AI答案里直接看品牌 | | 转化路径 | 搜索→点击→浏览→留资 | AI提及→品牌搜索→直接咨询 | | 核心指标 | 排名/曝光/点击 | 露出率/首推率/询盘增量 |</p>
+
+<p>SEO的KPI优化完了，GEO可能还是0。GEO必须有自己的指标体系。</p>
+
+<p>### 三个核心指标：ER、FR、CQ</p>
+
+<p>跑了半年，我们把GEO效果归到三个核心指标——这也是目前行业内最实操的评估框架：</p>
+
+<p>#### 指标1：ER（Exposure Rate，AI露出率）</p>
+
+<p>**定义**：在你的目标问题下，AI答案里提到你的比例。</p>
+
+<p>举个例子——你做了100个目标问题（"深圳AI公司推荐"、"GEO优化公司"等），在DeepSeek、ChatGPT、豆包里跑一遍，统计这300次回答里有多少次提到了你的品牌。</p>
+
+<p>ER = 提到你的次数 / 总问题数 × 100%</p>
+
+<p>我们自己的数据：在GEO未做优化时，星禾元亨在测试问题中的ER是0%。做了3个月优化后，ER稳定在35%-45%之间。</p>
+
+<p>ER的及格线： - 启动期（0-30天）：5%-15% - 成长期（30-90天）：20%-40% - 成熟期（90天+）：40%以上</p>
+
+<p>#### 指标2：FR（First Recommend Rate，首推率）</p>
+
+<p>**定义**：AI答案里你排第一的占比。</p>
+
+<p>提到你已经很难得了，但被AI放在第一推荐位才是真正的赢家位置。客户问"深圳哪家AI服务公司靠谱"，AI列出3家，你在第一位还是第三位，流量差异是指数级的。</p>
+
+<p>FR = 排第一的次数 / 提到你的次数 × 100%</p>
+
+<p>首推率比露出率更难提升——它依赖权威度、引用源质量、内容结构化程度。</p>
+
+<p>FR的健康水位： - 启动期：10%-20% - 成长期：30%-50% - 成熟期：50%以上</p>
+
+<p>#### 指标3：CQ（Conversion Quotient，转化系数）</p>
+
+<p>**定义**：AI露出带来的实际询盘/咨询/转化。</p>
+
+<p>CQ = AI渠道带来的询盘数 / AI露出次数 × 1000</p>
+
+<p>这个指标把GEO从"品牌曝光"拉回到"商业结果"。</p>
+
+<p>我们的实测数据： - 100次AI露出 → 12-18次品牌搜索 → 3-5个咨询 → 1-2个成交 - 整体转化系数 CQ ≈ 15-20</p>
+
+<p>CQ行业差异很大： - 高客单价TOB服务：CQ 5-10（询盘少但单值高） - 中客单价SaaS/产品：CQ 15-25 - 低客单价电商：CQ 30-50</p>
+
+<p>三个指标配合看，才能反映GEO的真实健康度： - ER高 + FR低：内容有露出但权威度不够 - FR高 + CQ低：露出位置好但转化路径断 - CQ高 + ER低：渠道精准但覆盖太窄</p>
+
+<p>### 一套完整的GEO监控体系</p>
+
+<p>指标定好了，怎么监控？我们自用的监控体系包含三层：</p>
+
+<p>#### 第一层：问题库（每周扫描）</p>
+
+<p>建立你的"目标问题库"——100-300个与你业务高度相关的AI提问。每周用自动化脚本跑一遍主流AI平台（DeepSeek、豆包、ChatGPT、Kimi、文心），记录每次回答的品牌露出情况。</p>
+
+<p>工具：可以用Playwright自动化跑，也可以用API。</p>
+
+<p>输出：每周一张ER/FR趋势图，看你优化动作的累积效果。</p>
+
+<p>#### 第二层：竞品监控（每月对比）</p>
+
+<p>在同一个问题库里，同时记录3-5个核心竞品的露出情况。</p>
+
+<p>关键问题： - 同一个问题下，AI先推荐你还是先推荐竞品？ - 你在哪些问题上领先，在哪些问题上落后？ - 竞品最近在哪些新问题上出现了？你为什么没出现？</p>
+
+<p>竞品监控让你清楚自己在赛道里的相对位置，不是闭门造车。</p>
+
+<p>#### 第三层：转化追踪（持续归因）</p>
+
+<p>AI露出 → 品牌搜索 → 咨询 → 成交，这条链路必须打通：</p>
+
+<p>① 品牌搜索监控：在百度站长平台、Google Search Console里设置品牌词监控。AI露出后用户大概率会搜你的品牌词确认。</p>
+
+<p>② 渠道归因话术：在销售/客服话术里加入"您是怎么知道我们的"。把AI渠道单列一类，统计占比。</p>
+
+<p>③ 留资路径标记：在落地页加UTM参数，区分AI渠道进来的流量。</p>
+
+<p>转化追踪是GEO最容易缺的一环——很多团队只盯露出率，忽略了商业结果。</p>
+
+<p>### GEO效果评估的三个常见误区</p>
+
+<p>#### 误区1：只看绝对露出数</p>
+
+<p>露出100次但全是冷门问题，不如露出20次全是精准问题。问题质量比数量重要。</p>
+
+<p>#### 误区2：只看单平台数据</p>
+
+<p>只跑DeepSeek或只跑豆包，都是片面的。你的客户分散在5个主流AI平台里，任何一个平台的数据都不能代表全貌。</p>
+
+<p>#### 误区3：GEO做一个月就想要结果</p>
+
+<p>GEO不是SEO——SEO可以靠堆量3个月见效，GEO依赖AI对品牌的"信任建立"，周期更长。</p>
+
+<p>我们的经验数据： - 1-30天：ER从0%涨到10-15%，主要是问题覆盖的广度 - 30-90天：FR开始提升，从10%涨到30-40%，是内容权威度的积累 - 90-180天：CQ稳定，品牌搜索流量开始放量 - 180天+：进入复利阶段，每个月新增长都是前面内容资产的回报</p>
+
+<p>### 行动清单</p>
+
+<p>今天能做的事： 1. 列出你的100个目标问题（1小时） 2. 在5个主流AI平台跑一遍，记录初始ER（2小时） 3. 选定3-5个竞品，建立竞品问题库（30分钟） 4. 画一张ER/FR/CQ三指标表，每周更新</p>
+
+<p>GEO是慢生意，但慢生意的好处是——一旦做起来，护城河比传统广告深得多。你的对手在投广告、在买流量，你在AI世界里积累品牌资产。半年后回来看，差距就是复利的结果。</p>
+
+<p>### 客户常问 **Q：GEO效果评估需要专门买工具吗？** A：不一定。启动期可以用人工+脚本（Playwright自动化）跑问题库，每天10分钟搞定。规模大了（日均问题量500+）再考虑专业监控工具。我们自己做GEO MVP时，前期都是脚本跑出来的数据。</p>
+
+<p>**Q：做了3个月GEO，ER还是很低怎么办？** A：分两步排查——第一步看问题覆盖广度：你是不是只覆盖了10-20个问题？GEO要起效果至少要100+目标问题被AI"看到"你。第二步看内容权威度：被AI引用的内容是不是有结构化数据、第三方引用、明确数据点？两个都弱，ER起不来很正常。</p>
+
+<p>**Q：GEO做出来的效果，能直接对接CRM吗？** A：现在还不行，AI渠道的归因还在早期阶段。实操做法是：销售话术里加"您从哪知道我们"，把AI渠道单列追踪。半年后你的数据自然就出来了。不需要一开始就追求完美的归因模型。</p>
+
+<p style="margin-top:32px;padding:16px 20px;background:#0d1321;border-left:3px solid #00e67a;border-radius:6px;font-size:14px;color:#8892a4;"><strong style="color:#00e67a;">📎 相关阅读</strong><br>· <a href="article.html?id=8" style="color:#00d4ff;text-decoration:none;">一人公司怎么做GEO？零预算冷启动全攻略</a><br>· <a href="article.html?id=5" style="color:#00d4ff;text-decoration:none;">GEO：AI时代的流量新战场，你的品牌还在用旧地图吗？</a><br></p>
+  </article>
+
+  <div class="related">
+    <strong>📎 相关阅读</strong><br/>
+    <a href="/">返回首页查看更多文章 →</a>
+  </div>
+</main>
+
+<footer class="footer">
+  © 2026 深圳市星禾元亨智能科技有限公司 &nbsp;|&nbsp;
+  <a href="/" style="color:#57606a">xhyh.work</a> &nbsp;|&nbsp; 粤ICP备XXXXXXXX号
+</footer>
+
+<!-- Article JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "GEO做得怎么样才算好？3个核心指标+1套监控体系",
+  "description": "做了大半年GEO，最怕客户问'到底有没有效果'。ER露出率、FR首推率、CQ转化系数——三个指标配合看，才能反映GEO的真实健康度。一套自用半年的监控体系完整拆解。",
+  "author": {
+    "@type": "Person",
+    "name": "司远",
+    "jobTitle": "星禾元亨创始人"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "星禾元亨",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://xhyh.work/images/favicon.png"
+    }
+  },
+  "datePublished": "2026-07-06",
+  "dateModified": "2026-07-06",
+  "mainEntityOfPage": "https://xhyh.work/article-11.html",
+  "keywords": "GEO, 效果评估, AI露出率, 监控体系, 数据驱动"
+}
+</script>
+
+<!-- FAQ JSON-LD (if applicable) -->
+
+
+</body>
+</html>
