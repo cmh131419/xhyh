@@ -1,9 +1,9 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
-星禾元亨 · 本地管理服务
-启动: python manage.py
-后台: http://localhost:8765/admin/
-网站: http://localhost:8765/
+鏄熺鍏冧酣 路 鏈湴绠＄悊鏈嶅姟
+鍚姩: python manage.py
+鍚庡彴: local admin preview
+缃戠珯: local site preview
 """
 
 import http.server
@@ -20,7 +20,7 @@ from pathlib import Path
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-HOST = "localhost"
+HOST = "127.0.0.1"
 PORT = 8765
 ROOT = Path(__file__).resolve().parent
 
@@ -30,7 +30,7 @@ CASES_FILE = DATA_DIR / "cases.json"
 
 
 # ============================================================
-# 数据读写
+# 鏁版嵁璇诲啓
 # ============================================================
 
 def read_json(path):
@@ -52,7 +52,7 @@ def next_id(data):
 
 
 # ============================================================
-# API 路由
+# API 璺敱
 # ============================================================
 
 def api_list(file_path):
@@ -72,7 +72,7 @@ def api_update(file_path, item_id, body):
     for item in data:
         if item.get("id") == item_id:
             item.update(body)
-            item["id"] = item_id  # 不允许改 ID
+            item["id"] = item_id  # 涓嶅厑璁告敼 ID
             write_json(file_path, data)
             return 200, item
     return 404, {"error": "not found"}
@@ -88,7 +88,7 @@ def api_delete(file_path, item_id):
 
 
 def api_publish():
-    """Git add + commit + push (后台线程执行)"""
+    """Git add + commit + push (鍚庡彴绾跨▼鎵ц)"""
     import threading
 
     def do_publish():
@@ -104,7 +104,7 @@ def api_publish():
             if not status.stdout.strip():
                 return
             from datetime import datetime
-            msg = f"📝 后台更新 - {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+            msg = f"馃摑 鍚庡彴鏇存柊 - {datetime.now().strftime('%Y-%m-%d %H:%M')}"
             subprocess.run(
                 ["git", "commit", "-m", msg],
                 cwd=str(ROOT), capture_output=True, text=True
@@ -113,18 +113,18 @@ def api_publish():
                 ["git", "push"],
                 cwd=str(ROOT), capture_output=True, text=True, check=True
             )
-            sys.stdout.write("  ✅ 发布成功！\n")
+            sys.stdout.write("  鉁?鍙戝竷鎴愬姛锛乗n")
             sys.stdout.flush()
         except Exception as e:
-            sys.stdout.write(f"  ❌ 发布失败: {e}\n")
+            sys.stdout.write(f"  鉂?鍙戝竷澶辫触: {e}\n")
             sys.stdout.flush()
 
     threading.Thread(target=do_publish, daemon=True).start()
-    return 200, {"message": "发布已提交，1-2分钟后生效。", "url": "https://cmh131419.github.io/xhyh/"}
+    return 200, {"message": "鍙戝竷宸叉彁浜わ紝1-2鍒嗛挓鍚庣敓鏁堛€?, "url": "https://cmh131419.github.io/xhyh/"}
 
 
 # ============================================================
-# HTTP 请求处理器
+# HTTP 璇锋眰澶勭悊鍣?
 # ============================================================
 
 class Handler(http.server.SimpleHTTPRequestHandler):
@@ -132,12 +132,12 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         super().__init__(*args, directory=str(ROOT), **kwargs)
 
     def log_message(self, format, *args):
-        # 简洁日志
+        # 绠€娲佹棩蹇?
         sys.stdout.write(f"  [{self.command}] {args[0]}\n")
         sys.stdout.flush()
 
     def end_headers(self):
-        # CORS —— 允许后台页面的跨域请求（虽然同源，但加上更安全）
+        # CORS 鈥斺€?鍏佽鍚庡彴椤甸潰鐨勮法鍩熻姹傦紙铏界劧鍚屾簮锛屼絾鍔犱笂鏇村畨鍏級
         self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
         self.send_header("Access-Control-Allow-Headers", "Content-Type")
@@ -160,7 +160,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(json.dumps(data, ensure_ascii=False).encode("utf-8"))
 
-    # ---- API 路由分发 ----
+    # ---- API 璺敱鍒嗗彂 ----
     def handle_api(self, method):
         path = urllib.parse.urlparse(self.path).path
 
@@ -211,7 +211,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if path.startswith("/api/"):
             return self.handle_api("GET")
 
-        # 友好的 URL 重写
+        # 鍙嬪ソ鐨?URL 閲嶅啓
         if path == "/admin" or path == "/admin/":
             self.path = "/admin/admin.html"
 
@@ -234,11 +234,11 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
 
 # ============================================================
-# 启动
+# 鍚姩
 # ============================================================
 
 def main():
-    # 确保 data 目录存在
+    # 纭繚 data 鐩綍瀛樺湪
     DATA_DIR.mkdir(exist_ok=True)
     for f, default in [(ARTICLES_FILE, []), (CASES_FILE, [])]:
         if not f.exists():
@@ -248,24 +248,25 @@ def main():
     server.socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
     print()
-    print("  ⚡ 星禾元亨 · 本地管理服务")
-    print("  ────────────────────────────")
-    print(f"  后台管理: http://{HOST}:{PORT}/admin/")
-    print(f"  网站预览: http://{HOST}:{PORT}/")
-    print(f"  API 地址: http://{HOST}:{PORT}/api/")
+    print("  鈿?鏄熺鍏冧酣 路 鏈湴绠＄悊鏈嶅姟")
+    print("  鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€")
+    print(f"  鍚庡彴绠＄悊: http://{HOST}:{PORT}/admin/")
+    print(f"  缃戠珯棰勮: http://{HOST}:{PORT}/")
+    print(f"  API 鍦板潃: http://{HOST}:{PORT}/api/")
     print()
-    print("  按 Ctrl+C 停止服务")
+    print("  鎸?Ctrl+C 鍋滄鏈嶅姟")
     print()
 
-    # 自动打开浏览器（Windows 可能阻塞，手动打开）
+    # 鑷姩鎵撳紑娴忚鍣紙Windows 鍙兘闃诲锛屾墜鍔ㄦ墦寮€锛?
     # webbrowser.open(f"http://{HOST}:{PORT}/admin/")
 
     try:
         server.serve_forever()
     except KeyboardInterrupt:
-        print("\n  👋 已停止")
+        print("\n  馃憢 宸插仠姝?)
         server.server_close()
 
 
 if __name__ == "__main__":
     main()
+

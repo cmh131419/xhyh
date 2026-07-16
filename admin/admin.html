@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>星禾元亨 · 后台管理</title>
+<title>鏄熺鍏冧酣 路 鍚庡彴绠＄悊</title>
 <style>
 :root {
   --bg: #080C14;
@@ -207,30 +207,30 @@ body {
 
 <!-- SIDEBAR -->
 <aside class="sidebar">
-  <div class="sidebar-logo"><span>⚡</span> 星禾元亨 · 后台</div>
+  <div class="sidebar-logo"><span>鈿?/span> 鏄熺鍏冧酣 路 鍚庡彴</div>
   <nav class="sidebar-nav">
     <a href="#" class="active" data-tab="articles">
-      <span class="icon">📝</span> <span>文章管理</span>
+      <span class="icon">馃摑</span> <span>鏂囩珷绠＄悊</span>
     </a>
     <a href="#" data-tab="cases">
-      <span class="icon">📊</span> <span>案例管理</span>
+      <span class="icon">馃搳</span> <span>妗堜緥绠＄悊</span>
     </a>
   </nav>
   <div class="sidebar-footer">
-    <div class="stat" id="stats">加载中...</div>
+    <div class="stat" id="stats">鍔犺浇涓?..</div>
   </div>
 </aside>
 
 <!-- MAIN -->
 <main class="main">
   <div class="topbar">
-    <h2 id="pageTitle">📝 文章管理</h2>
+    <h2 id="pageTitle">馃摑 鏂囩珷绠＄悊</h2>
     <div class="topbar-actions">
       <span class="topbar-status" id="topStatus">
-        <span class="dot ok"></span> <span id="statusText">已连接</span>
+        <span class="dot ok"></span> <span id="statusText">宸茶繛鎺?/span>
       </span>
-      <button class="btn btn-primary" id="btnNew" onclick="openModal()">+ 新建</button>
-      <button class="btn btn-publish" onclick="doPublish()" id="btnPublish">🚀 发布上线</button>
+      <button class="btn btn-primary" id="btnNew" onclick="openModal()">+ 鏂板缓</button>
+      <button class="btn btn-publish" onclick="doPublish()" id="btnPublish">馃殌 鍙戝竷涓婄嚎</button>
     </div>
   </div>
   <div class="content" id="mainContent"></div>
@@ -240,13 +240,13 @@ body {
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal">
     <div class="modal-header">
-      <h3 id="modalTitle">新建文章</h3>
-      <button class="modal-close" onclick="closeModal()">✕</button>
+      <h3 id="modalTitle">鏂板缓鏂囩珷</h3>
+      <button class="modal-close" onclick="closeModal()">鉁?/button>
     </div>
     <div class="modal-body" id="modalBody"></div>
     <div class="modal-footer">
-      <button class="btn btn-ghost" onclick="closeModal()">取消</button>
-      <button class="btn btn-primary" id="btnSave" onclick="saveItem()">保存</button>
+      <button class="btn btn-ghost" onclick="closeModal()">鍙栨秷</button>
+      <button class="btn btn-primary" id="btnSave" onclick="saveItem()">淇濆瓨</button>
     </div>
   </div>
 </div>
@@ -277,8 +277,8 @@ document.querySelectorAll('.sidebar-nav a').forEach(a => {
     document.querySelectorAll('.sidebar-nav a').forEach(x => x.classList.remove('active'));
     a.classList.add('active');
     currentTab = a.dataset.tab;
-    document.getElementById('pageTitle').textContent = currentTab === 'articles' ? '📝 文章管理' : '📊 案例管理';
-    document.getElementById('btnNew').textContent = currentTab === 'articles' ? '+ 新建文章' : '+ 新建案例';
+    document.getElementById('pageTitle').textContent = currentTab === 'articles' ? '馃摑 鏂囩珷绠＄悊' : '馃搳 妗堜緥绠＄悊';
+    document.getElementById('btnNew').textContent = currentTab === 'articles' ? '+ 鏂板缓鏂囩珷' : '+ 鏂板缓妗堜緥';
     loadList();
   });
 });
@@ -290,18 +290,18 @@ function openModal(item=null) {
   document.getElementById('modalOverlay').classList.add('on');
 
   if (currentTab === 'articles') {
-    document.getElementById('modalTitle').textContent = isEdit ? '编辑文章' : '新建文章';
+    document.getElementById('modalTitle').textContent = isEdit ? '缂栬緫鏂囩珷' : '鏂板缓鏂囩珷';
     document.getElementById('modalBody').innerHTML = `
-      <div class="form-group"><label>文章标题 *</label><input id="fTitle" value="${item?.title||''}" placeholder="输入文章标题"></div>
+      <div class="form-group"><label>鏂囩珷鏍囬 *</label><input id="fTitle" value="${item?.title||''}" placeholder="杈撳叆鏂囩珷鏍囬"></div>
       <div class="form-row">
-        <div class="form-group"><label>日期</label><input id="fDate" value="${item?.date||''}" placeholder="如：每周更新 / 2026-06-23"></div>
-        <div class="form-group"><label>分类</label><input id="fCat" value="${item?.category||''}" placeholder="如：Token代理"></div>
+        <div class="form-group"><label>鏃ユ湡</label><input id="fDate" value="${item?.date||''}" placeholder="濡傦細姣忓懆鏇存柊 / 2026-06-23"></div>
+        <div class="form-group"><label>鍒嗙被</label><input id="fCat" value="${item?.category||''}" placeholder="濡傦細Token浠ｇ悊"></div>
       </div>
-      <div class="form-group"><label>摘要</label><textarea id="fSummary" rows="3" placeholder="输入文章摘要">${item?.summary||''}</textarea></div>
+      <div class="form-group"><label>鎽樿</label><textarea id="fSummary" rows="3" placeholder="杈撳叆鏂囩珷鎽樿">${item?.summary||''}</textarea></div>
       <div class="form-group">
-        <label>标签（回车添加）</label>
+        <label>鏍囩锛堝洖杞︽坊鍔狅級</label>
         <div class="tag-input-wrap" id="tagWrap">
-          <input id="fTagInput" placeholder="输入标签后回车">
+          <input id="fTagInput" placeholder="杈撳叆鏍囩鍚庡洖杞?>
         </div>
         <input type="hidden" id="fTags" value='${JSON.stringify(item?.tags||[])}'>
       </div>
@@ -316,39 +316,39 @@ function openModal(item=null) {
       });
     }, 50);
   } else {
-    document.getElementById('modalTitle').textContent = isEdit ? '编辑案例' : '新建案例';
+    document.getElementById('modalTitle').textContent = isEdit ? '缂栬緫妗堜緥' : '鏂板缓妗堜緥';
     const kpis = item?.kpi || [{value:'',label:''}];
     document.getElementById('modalBody').innerHTML = `
-      <div class="form-group"><label>案例标题 *</label><input id="fTitle" value="${item?.title||''}" placeholder="如：深圳某AI初创公司"></div>
+      <div class="form-group"><label>妗堜緥鏍囬 *</label><input id="fTitle" value="${item?.title||''}" placeholder="濡傦細娣卞湷鏌怉I鍒濆垱鍏徃"></div>
       <div class="form-row">
-        <div class="form-group"><label>标签文字</label><input id="fTag" value="${item?.tag||''}" placeholder="如：TOB · Token代理"></div>
-        <div class="form-group"><label>标签颜色</label>
+        <div class="form-group"><label>鏍囩鏂囧瓧</label><input id="fTag" value="${item?.tag||''}" placeholder="濡傦細TOB 路 Token浠ｇ悊"></div>
+        <div class="form-group"><label>鏍囩棰滆壊</label>
           <select id="fColor">
-            <option value="t1" ${item?.color==='t1'?'selected':''}>绿色 (Token代理)</option>
-            <option value="t2" ${item?.color==='t2'?'selected':''}>紫色 (AI客服)</option>
-            <option value="t3" ${item?.color==='t3'?'selected':''}>橙色 (实体/GEO)</option>
+            <option value="t1" ${item?.color==='t1'?'selected':''}>缁胯壊 (Token浠ｇ悊)</option>
+            <option value="t2" ${item?.color==='t2'?'selected':''}>绱壊 (AI瀹㈡湇)</option>
+            <option value="t3" ${item?.color==='t3'?'selected':''}>姗欒壊 (瀹炰綋/GEO)</option>
           </select>
         </div>
       </div>
       <div class="form-row">
-        <div class="form-group"><label>背景样式</label>
+        <div class="form-group"><label>鑳屾櫙鏍峰紡</label>
           <select id="fBg">
-            <option value="e1" ${item?.bg==='e1'?'selected':''}>绿色渐变</option>
-            <option value="e2" ${item?.bg==='e2'?'selected':''}>紫色渐变</option>
-            <option value="e3" ${item?.bg==='e3'?'selected':''}>橙色渐变</option>
+            <option value="e1" ${item?.bg==='e1'?'selected':''}>缁胯壊娓愬彉</option>
+            <option value="e2" ${item?.bg==='e2'?'selected':''}>绱壊娓愬彉</option>
+            <option value="e3" ${item?.bg==='e3'?'selected':''}>姗欒壊娓愬彉</option>
           </select>
         </div>
-        <div class="form-group"><label>Emoji</label><input id="fEmoji" value="${item?.emoji||'💎'}" placeholder="如：💎"></div>
+        <div class="form-group"><label>Emoji</label><input id="fEmoji" value="${item?.emoji||'馃拵'}" placeholder="濡傦細馃拵"></div>
       </div>
-      <div class="form-group"><label>描述</label><textarea id="fDesc" rows="3" placeholder="案例描述">${item?.desc||''}</textarea></div>
+      <div class="form-group"><label>鎻忚堪</label><textarea id="fDesc" rows="3" placeholder="妗堜緥鎻忚堪">${item?.desc||''}</textarea></div>
       <div class="form-group">
-        <label>KPI 数据 <button class="btn btn-ghost btn-sm" onclick="addKpiRow()" type="button" style="float:right">+ 添加</button></label>
+        <label>KPI 鏁版嵁 <button class="btn btn-ghost btn-sm" onclick="addKpiRow()" type="button" style="float:right">+ 娣诲姞</button></label>
         <div id="kpiContainer">
           ${kpis.map((k,i) => `
             <div class="kpi-row">
-              <input value="${k.value}" placeholder="数值（如：-58%）" class="kpi-val">
-              <input value="${k.label}" placeholder="标签（如：Token成本）" class="kpi-lbl">
-              <button class="btn btn-ghost btn-icon" onclick="this.parentElement.remove()" type="button">🗑</button>
+              <input value="${k.value}" placeholder="鏁板€硷紙濡傦細-58%锛? class="kpi-val">
+              <input value="${k.label}" placeholder="鏍囩锛堝锛歍oken鎴愭湰锛? class="kpi-lbl">
+              <button class="btn btn-ghost btn-icon" onclick="this.parentElement.remove()" type="button">馃棏</button>
             </div>
           `).join('')}
         </div>
@@ -376,7 +376,7 @@ function addTagChip(tag) {
   const chip = document.createElement('span');
   chip.className = 'tag-chip';
   chip.dataset.tag = tag;
-  chip.innerHTML = `${tag}<span class="rm" onclick="this.parentElement.remove()">×</span>`;
+  chip.innerHTML = `${tag}<span class="rm" onclick="this.parentElement.remove()">脳</span>`;
   wrap.insertBefore(chip, inp);
 }
 function addTag(tag) { if(tag) addTagChip(tag); }
@@ -387,9 +387,9 @@ function addKpiRow() {
   const row = document.createElement('div');
   row.className = 'kpi-row';
   row.innerHTML = `
-    <input value="" placeholder="数值（如：-58%）" class="kpi-val">
-    <input value="" placeholder="标签（如：Token成本）" class="kpi-lbl">
-    <button class="btn btn-ghost btn-icon" onclick="this.parentElement.remove()" type="button">🗑</button>
+    <input value="" placeholder="鏁板€硷紙濡傦細-58%锛? class="kpi-val">
+    <input value="" placeholder="鏍囩锛堝锛歍oken鎴愭湰锛? class="kpi-lbl">
+    <button class="btn btn-ghost btn-icon" onclick="this.parentElement.remove()" type="button">馃棏</button>
   `;
   c.appendChild(row);
 }
@@ -397,7 +397,7 @@ function addKpiRow() {
 // ===== SAVE =====
 async function saveItem() {
   const title = document.getElementById('fTitle')?.value.trim();
-  if (!title) return showToast('标题不能为空', 'error');
+  if (!title) return showToast('鏍囬涓嶈兘涓虹┖', 'error');
 
   let data;
   if (currentTab === 'articles') {
@@ -434,24 +434,24 @@ async function saveItem() {
       body: JSON.stringify(data)
     });
     if (!res.ok) throw new Error(await res.text());
-    showToast(isEdit ? '更新成功' : '创建成功');
+    showToast(isEdit ? '鏇存柊鎴愬姛' : '鍒涘缓鎴愬姛');
     closeModal();
     loadList();
   } catch(e) {
-    showToast('保存失败: ' + e.message, 'error');
+    showToast('淇濆瓨澶辫触: ' + e.message, 'error');
   }
 }
 
 // ===== DELETE =====
 async function deleteItem(id) {
-  if (!confirm('确定删除？此操作不可撤销。')) return;
+  if (!confirm('纭畾鍒犻櫎锛熸鎿嶄綔涓嶅彲鎾ら攢銆?)) return;
   try {
     const res = await fetch(`${API}/${currentTab}/${id}`, { method:'DELETE' });
     if (!res.ok) throw new Error(await res.text());
-    showToast('删除成功');
+    showToast('鍒犻櫎鎴愬姛');
     loadList();
   } catch(e) {
-    showToast('删除失败: ' + e.message, 'error');
+    showToast('鍒犻櫎澶辫触: ' + e.message, 'error');
   }
 }
 
@@ -464,11 +464,11 @@ async function loadList() {
 
     // Update stats
     document.getElementById('stats').innerHTML = `
-      ${currentTab==='articles'?'文章':'案例'}数量<br><strong>${items.length}</strong>
+      ${currentTab==='articles'?'鏂囩珷':'妗堜緥'}鏁伴噺<br><strong>${items.length}</strong>
     `;
 
     if (!items.length) {
-      c.innerHTML = `<div class="empty-state"><div class="big">📭</div><p>暂无${currentTab==='articles'?'文章':'案例'}</p><button class="btn btn-primary" onclick="openModal()">+ 新建${currentTab==='articles'?'文章':'案例'}</button></div>`;
+      c.innerHTML = `<div class="empty-state"><div class="big">馃摥</div><p>鏆傛棤${currentTab==='articles'?'鏂囩珷':'妗堜緥'}</p><button class="btn btn-primary" onclick="openModal()">+ 鏂板缓${currentTab==='articles'?'鏂囩珷':'妗堜緥'}</button></div>`;
       return;
     }
 
@@ -476,12 +476,12 @@ async function loadList() {
       c.innerHTML = `<div class="card-grid">${items.map(a => `
         <div class="card">
           <div class="card-head"><h4>${a.title}</h4></div>
-          <div class="card-meta"><span>📅 ${a.date||'未设定'}</span><span>🏷️ ${a.category||'未分类'}</span></div>
-          <div class="card-body">${a.summary||'暂无摘要'}</div>
+          <div class="card-meta"><span>馃搮 ${a.date||'鏈瀹?}</span><span>馃彿锔?${a.category||'鏈垎绫?}</span></div>
+          <div class="card-body">${a.summary||'鏆傛棤鎽樿'}</div>
           <div class="card-tags">${(a.tags||[]).map(t => `<span class="card-tag">${t}</span>`).join('')}</div>
           <div class="card-actions">
-            <button class="btn btn-ghost btn-sm" onclick='editItem(${JSON.stringify(a)})'>✏️ 编辑</button>
-            <button class="btn btn-danger btn-sm" onclick="deleteItem(${a.id})">🗑 删除</button>
+            <button class="btn btn-ghost btn-sm" onclick='editItem(${JSON.stringify(a)})'>鉁忥笍 缂栬緫</button>
+            <button class="btn btn-danger btn-sm" onclick="deleteItem(${a.id})">馃棏 鍒犻櫎</button>
           </div>
         </div>
       `).join('')}</div>`;
@@ -498,15 +498,15 @@ async function loadList() {
             </div>
           </div>
           <div class="card-actions">
-            <button class="btn btn-ghost btn-sm" onclick='editItem(${JSON.stringify(cs)})'>✏️ 编辑</button>
-            <button class="btn btn-danger btn-sm" onclick="deleteItem(${cs.id})">🗑 删除</button>
+            <button class="btn btn-ghost btn-sm" onclick='editItem(${JSON.stringify(cs)})'>鉁忥笍 缂栬緫</button>
+            <button class="btn btn-danger btn-sm" onclick="deleteItem(${cs.id})">馃棏 鍒犻櫎</button>
           </div>
         </div>
       `).join('')}</div>`;
     }
   } catch(e) {
-    c.innerHTML = `<div class="empty-state"><div class="big">❌</div><p>加载失败，请确认 manage.py 已启动</p></div>`;
-    document.getElementById('statusText').textContent = '未连接';
+    c.innerHTML = `<div class="empty-state"><div class="big">鉂?/div><p>鍔犺浇澶辫触锛岃纭 manage.py 宸插惎鍔?/p></div>`;
+    document.getElementById('statusText').textContent = '鏈繛鎺?;
     document.querySelector('#topStatus .dot').className = 'dot err';
   }
 }
@@ -517,25 +517,25 @@ function editItem(item) {
 
 // ===== PUBLISH =====
 async function doPublish() {
-  if (!confirm('确定要发布到 GitHub Pages？\n这将提交所有更改并推送到线上。')) return;
+  if (!confirm('纭畾瑕佸彂甯冨埌 GitHub Pages锛焅n杩欏皢鎻愪氦鎵€鏈夋洿鏀瑰苟鎺ㄩ€佸埌绾夸笂銆?)) return;
   const btn = document.getElementById('btnPublish');
   const origText = btn.textContent;
-  btn.textContent = '⏳ 发布中...';
+  btn.textContent = '鈴?鍙戝竷涓?..';
   btn.disabled = true;
   document.querySelector('#topStatus .dot').className = 'dot sync';
-  document.getElementById('statusText').textContent = '发布中...';
+  document.getElementById('statusText').textContent = '鍙戝竷涓?..';
 
   try {
     const res = await fetch(`${API}/publish`, { method:'POST' });
     if (!res.ok) throw new Error(await res.text());
     const result = await res.json();
-    showToast('✅ 发布成功！1-2分钟后生效', 'success');
+    showToast('鉁?鍙戝竷鎴愬姛锛?-2鍒嗛挓鍚庣敓鏁?, 'success');
     document.querySelector('#topStatus .dot').className = 'dot ok';
-    document.getElementById('statusText').textContent = '已发布';
+    document.getElementById('statusText').textContent = '宸插彂甯?;
   } catch(e) {
-    showToast('发布失败: ' + e.message, 'error');
+    showToast('鍙戝竷澶辫触: ' + e.message, 'error');
     document.querySelector('#topStatus .dot').className = 'dot err';
-    document.getElementById('statusText').textContent = '发布失败';
+    document.getElementById('statusText').textContent = '鍙戝竷澶辫触';
   }
   btn.textContent = origText;
   btn.disabled = false;
@@ -556,3 +556,4 @@ document.addEventListener('keydown', e => {
 </script>
 </body>
 </html>
+
