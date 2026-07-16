@@ -311,6 +311,52 @@ section {
   gap: 18px;
 }
 
+.contact-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 210px;
+  gap: 22px;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-methods {
+  display: grid;
+  gap: 12px;
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+}
+
+.contact-line strong {
+  color: var(--ink);
+  font-size: 20px;
+}
+
+.qr-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.qr-card img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.qr-card span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
 .footer {
   border-top: 1px solid var(--line);
   padding: 28px 22px;
@@ -322,6 +368,7 @@ section {
   .hero, .case-inner { grid-template-columns: 1fr; }
   .grid, .grid.two, .timeline { grid-template-columns: 1fr; }
   .section-head, .cta { align-items: start; flex-direction: column; }
+  .contact-panel { grid-template-columns: 1fr; }
   .nav { align-items: start; }
   .nav-links { display: none; }
 }
