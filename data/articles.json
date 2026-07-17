@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": 1,
     "category": "GEO获客",
@@ -25,5 +25,32 @@
     "url": "/articles/ai-light-diagnosis-for-business/",
     "date": "2026-07-17",
     "tags": ["AI轻诊断", "流程自动化", "销售接待"]
+  },
+  {
+    "id": 4,
+    "category": "AI落地",
+    "title": "企业做 AI 落地，为什么第一步不是买工具？",
+    "summary": "工具不是起点。先把业务问题、资料口径和落地场景弄清楚，后面才知道该用什么。",
+    "url": "/articles/why-ai-implementation-not-buy-tools/",
+    "date": "2026-07-17",
+    "tags": ["AI落地", "企业诊断", "小闭环"]
+  },
+  {
+    "id": 5,
+    "category": "GEO获客",
+    "title": "中小企业怎么判断自己适不适合做 GEO 获客？",
+    "summary": "不是所有企业都要马上做 GEO。先看客户是否会搜索、产品是否能讲清楚、有没有内容素材。",
+    "url": "/articles/how-to-judge-geo-fit-for-sme/",
+    "date": "2026-07-17",
+    "tags": ["GEO获客", "客户问题", "内容素材"]
+  },
+  {
+    "id": 6,
+    "category": "企业知识库",
+    "title": "企业知识库怎么帮销售少重复解释客户问题？",
+    "summary": "把高频问题和标准回答沉淀下来，销售不用每次从头解释，客户也更容易理解。",
+    "url": "/articles/knowledge-base-sales-repeat-questions/",
+    "date": "2026-07-17",
+    "tags": ["企业知识库", "销售话术", "客户问题"]
   }
 ]

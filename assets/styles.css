@@ -220,6 +220,26 @@ section {
   padding: 22px;
 }
 
+.article-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 238px;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.article-card:hover {
+  border-color: #b9dec9;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 38px rgba(23, 32, 27, 0.08);
+}
+
+.article-card .read-more {
+  margin-top: auto;
+  color: var(--green);
+  font-weight: 800;
+}
+
 .card p, .article-body p, .article-body li { color: var(--muted); }
 
 .tag {
