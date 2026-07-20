@@ -52,5 +52,14 @@
     "url": "/articles/knowledge-base-sales-repeat-questions/",
     "date": "2026-07-17",
     "tags": ["企业知识库", "销售话术", "客户问题"]
+  },
+  {
+    "id": 7,
+    "category": "AI落地",
+    "title": "企业做 AI 落地，为什么第一步不是买工具？",
+    "summary": "工具不是起点。先做业务轻诊断，把资料、客户问题和小闭环弄清楚，再决定用什么 AI 工具。",
+    "url": "/articles/why-ai-implementation-should-not-start-with-tools/",
+    "date": "2026-07-20",
+    "tags": ["AI落地", "企业诊断", "企业知识库", "小闭环"]
   }
 ]
