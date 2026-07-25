@@ -61,5 +61,14 @@
     "url": "/articles/why-ai-implementation-should-not-start-with-tools/",
     "date": "2026-07-20",
     "tags": ["AI落地", "企业诊断", "企业知识库", "小闭环"]
+  },
+  {
+    "id": 8,
+    "category": "企业知识库",
+    "title": "企业做 AI 获客，为什么第一步不是发文章？",
+    "summary": "AI 获客不是先铺文章，而是先把产品资料、客户问题、应用场景和销售口径整理成知识库。",
+    "url": "/articles/why-ai-lead-generation-starts-with-knowledge-base/",
+    "date": "2026-07-25",
+    "tags": ["AI获客", "企业知识库", "客户问题", "GEO获客"]
   }
 ]
