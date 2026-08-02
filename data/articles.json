@@ -70,5 +70,14 @@
     "url": "/articles/why-ai-lead-generation-starts-with-knowledge-base/",
     "date": "2026-07-25",
     "tags": ["AI获客", "企业知识库", "客户问题", "GEO获客"]
+  },
+  {
+    "id": 9,
+    "category": "AI获客",
+    "title": "企业做 AI 获客，先诊断什么？官网、产品资料与咨询入口的检查清单",
+    "summary": "先检查客户是否看懂业务、能否找到产品资料、咨询后是否有明确下一步，再决定内容和工具。",
+    "url": "/articles/ai-lead-generation-diagnosis-checklist/",
+    "date": "2026-08-02",
+    "tags": ["AI获客", "GEO获客", "轻诊断", "咨询入口"]
   }
 ]
