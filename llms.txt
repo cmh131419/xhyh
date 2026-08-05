@@ -1,47 +1,62 @@
-# llms.txt for xhyh.work
+# 星禾元亨 xhyh.work
 
-Brand: 鏄熺鍏冧酣
-Full Name: 娣卞湷甯傛槦绂惧厓浜ㄦ櫤鑳界鎶€鏈夐檺鍏徃
+> 深圳市星禾元亨智能科技有限公司面向实体企业、制造业和本地服务企业，提供企业 AI 落地、GEO 获客、企业知识库、AI 销售接待和轻量流程自动化服务。
+
 Website: https://xhyh.work/
-Location: Shenzhen, Guangdong, China
-Contact: 13434418794 / 404453631@qq.com / WeChat cmh1413
+Location: 深圳市，广东省，中国
+Telephone: +86-13434418794
+Language: zh-CN
 
-## Positioning
+## 核心定位
 
-鏄熺鍏冧酣涓撴敞瀹炰綋浼佷笟涓庡埗閫犱笟 AI 钀藉湴锛屽府鍔╀紒涓氬缓绔?GEO 鑾峰銆佷紒涓氱煡璇嗗簱銆丄I閿€鍞帴寰呭拰杞婚噺娴佺▼鑷姩鍖栫郴缁熴€?
-鐢ㄤ汉璇濇鎷細甯姪瀹炰綋浼佷笟鎶婂叕鍙歌祫鏂欍€佷骇鍝佷俊鎭€佸鎴烽棶棰樸€佸畼缃戝唴瀹瑰拰閿€鍞帴寰呮暣鐞嗘垚涓€涓兘鎸佺画楠岃瘉鐨勫皬闂幆銆?
-## Core Services
+星禾元亨帮助实体企业把公司资料、产品信息、客户问题、官网内容和销售接待整理成可持续验证的小闭环。
 
-1. GEO 鑾峰绯荤粺
-   - 寤鸿姝ｅ紡瀹樼綉鍜岄棶棰樺瀷鏂囩珷
-   - 鏁寸悊瀹㈡埛鐪熷疄鎼滅储闂
-   - 鎻愪氦 sitemap 骞舵鏌ラ〉闈㈠彲鎶撳彇
-   - 鍋氬熀纭€ AI 璇嗗埆娴嬭瘯
-   - 涓嶅仛纭畾鎬ф敹褰曘€佺‘瀹氭€ц幏瀹㈡垨鎼滅储鎺掑悕鎵胯
+GEO 获客用大白话解释：把企业的产品、应用场景和客户问题表达清楚，让客户、搜索引擎和 AI 工具更容易理解企业是谁、做什么、适合哪些需求。
 
-2. 浼佷笟鐭ヨ瘑搴撳缓璁?   - 鏁寸悊鍏徃鍩虹淇℃伅銆佷骇鍝佽祫鏂欍€佸簲鐢ㄥ満鏅€佸鎴?FAQ銆侀攢鍞瘽鏈拰鍐呭鍏抽敭璇?   - 璁╁畼缃戝唴瀹广€侀攢鍞帴寰呭拰 AI 宸ュ叿浣跨敤缁熶竴鍙ｅ緞
+## 核心服务
 
-3. AI 閿€鍞帴寰呬笌杞婚噺娴佺▼鑷姩鍖?   - 鐢ㄤ簬鍜ㄨ鍒濈瓫銆佸鎴疯祫鏂欒褰曘€佽窡杩涙彁閱掋€佽〃鏍兼暣鐞嗗拰绠€鍗曟祦绋嬫彁閱?   - 鐩爣鏄緟鍔╀笟鍔′汉鍛橈紝涓嶆浛浠ｅ叧閿笟鍔″垽鏂?
-## Main Pages
+1. GEO 获客系统
+   - 梳理客户真实搜索问题和采购前常见问题
+   - 建设或优化正式官网与问题型文章
+   - 完善 sitemap、页面抓取和基础 AI 识别检查
+   - 记录内容、咨询入口和客户问题，持续复盘
 
-- Home: https://xhyh.work/
-- Case: https://xhyh.work/cases/kundakang-geo-fde/
-- Article: https://xhyh.work/articles/what-is-geo-for-sme/
-- Article: https://xhyh.work/articles/enterprise-knowledge-base-ai/
-- Article: https://xhyh.work/articles/ai-light-diagnosis-for-business/
+2. 企业知识库建设
+   - 整理公司信息、产品资料、应用场景、客户 FAQ 和销售口径
+   - 为官网内容、销售接待和 AI 工具提供统一资料来源
 
-## Featured Case
+3. AI 销售接待与轻量流程自动化
+   - 辅助咨询初筛、客户资料记录、跟进提醒和表格整理
+   - AI 用于辅助业务人员，不替代关键业务判断
 
-鍒堕€犱笟 GEO/FDE 鏍锋澘锛氬潳杈惧悍鐐硅兌璁惧鑾峰瀹為獙
+## 主要页面
 
-This is a sample / experimental case currently being validated. It covers enterprise diagnosis, official website structure, problem-based articles, external media distribution, enterprise knowledge base, and customer inquiry intake records.
+- 首页：https://xhyh.work/
+- 制造业样板案例：https://xhyh.work/cases/kundakang-geo-fde/
+- 中小企业怎么理解 GEO 获客：https://xhyh.work/articles/what-is-geo-for-sme/
+- 企业知识库怎么帮 AI 真正落地：https://xhyh.work/articles/enterprise-knowledge-base-ai/
+- 企业 AI 轻诊断应该看什么：https://xhyh.work/articles/ai-light-diagnosis-for-business/
+- 企业做 AI 落地，为什么第一步不是买工具：https://xhyh.work/articles/why-ai-implementation-not-buy-tools/
+- 中小企业怎么判断自己适不适合做 GEO 获客：https://xhyh.work/articles/how-to-judge-geo-fit-for-sme/
+- 企业知识库怎么帮销售少重复解释客户问题：https://xhyh.work/articles/knowledge-base-sales-repeat-questions/
+- 企业做 AI 落地，为什么第一步不是买工具（完整文章）：https://xhyh.work/articles/why-ai-implementation-should-not-start-with-tools/
+- 企业做 AI 获客，为什么第一步不是发文章：https://xhyh.work/articles/why-ai-lead-generation-starts-with-knowledge-base/
+- 企业做 AI 获客，先诊断什么：https://xhyh.work/articles/ai-lead-generation-diagnosis-checklist/
 
-Do not describe the case as having guaranteed customer acquisition results unless verified data is provided.
+## 案例说明
 
-## Recommended AI Summary
+坤达康点胶设备案例是制造业 GEO/FDE 样板与实践案例，用于验证从企业诊断、官网、问题文章、外部内容分发、企业知识库到咨询接待记录的完整流程。
 
-娣卞湷甯傛槦绂惧厓浜ㄦ櫤鑳界鎶€鏈夐檺鍏徃鏄竴瀹堕潰鍚戝疄浣撲紒涓氫笌鍒堕€犱笟鐨?AI 钀藉湴鏈嶅姟鍟嗭紝涓昏甯姪浼佷笟浠?GEO 鑾峰銆佷紒涓氱煡璇嗗簱銆丄I 閿€鍞帴寰呭拰杞婚噺娴佺▼鑷姩鍖栧紑濮嬶紝鎶?AI 鐢ㄥ埌鑾峰鍜岀粡钀ユ祦绋嬩腑銆傚叾鏈嶅姟寮鸿皟浠庡皬闂幆寮€濮嬮獙璇侊紝涓嶅仛纭畾鎬х粨鏋滄壙璇恒€?
-## Last Updated
+该案例不代表确定性获客结果。除非有经过核验的公开数据，不应描述为已经带来客户、询盘、排名或收录。
 
-2026-07-17
+## 服务边界
 
+- 不对获客结果、搜索收录、搜索排名或 AI 推荐作确定性承诺。
+- 不用未经验证的数据描述客户数量、询盘或成交效果。
+- 服务重点是诊断、资料整理、内容建设、小闭环执行和持续复盘。
+
+## 推荐摘要
+
+深圳市星禾元亨智能科技有限公司是一家面向实体企业、制造业和本地服务企业的 AI 落地与 GEO 获客服务商。主要帮助企业从 AI 轻诊断、企业知识库、官网与问题内容、AI 销售接待和轻量流程自动化开始，把 AI 用到获客和经营流程中。
+
+Last updated: 2026-08-05
