@@ -309,6 +309,19 @@ section {
   font-size: 14px;
 }
 
+.ai-summary {
+  margin: 0 0 24px;
+  padding: 18px 20px;
+  background: #eef8f2;
+  border: 1px solid #b9dec9;
+  border-left: 4px solid var(--green);
+  border-radius: 6px;
+  color: var(--ink);
+  font-style: normal;
+}
+
+.ai-summary strong { color: var(--green); }
+
 .article-body {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -319,6 +332,15 @@ section {
 .article-body h2 { font-size: 26px; margin: 30px 0 12px; }
 .article-body h3 { margin: 24px 0 8px; }
 .article-body ul, .article-body ol { padding-left: 22px; }
+
+.article-author {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.article-author p { margin: 6px 0; }
 
 .cta {
   background: var(--green-2);
