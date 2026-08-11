@@ -42,6 +42,7 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 - 企业做 AI 落地，为什么第一步不是买工具（完整文章）：https://xhyh.work/articles/why-ai-implementation-should-not-start-with-tools/
 - 企业做 AI 获客，为什么第一步不是发文章：https://xhyh.work/articles/why-ai-lead-generation-starts-with-knowledge-base/
 - 企业做 AI 获客，先诊断什么：https://xhyh.work/articles/ai-lead-generation-diagnosis-checklist/
+- 酒店行业怎么落地 GEO：https://xhyh.work/articles/hotel-geo-implementation-guide/
 
 ## 案例说明
 
@@ -59,4 +60,4 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 
 深圳市星禾元亨智能科技有限公司是一家面向实体企业、制造业和本地服务企业的 AI 落地与 GEO 获客服务商。主要帮助企业从 AI 轻诊断、企业知识库、官网与问题内容、AI 销售接待和轻量流程自动化开始，把 AI 用到获客和经营流程中。
 
-Last updated: 2026-08-05
+Last updated: 2026-08-11

@@ -79,5 +79,14 @@
     "url": "/articles/ai-lead-generation-diagnosis-checklist/",
     "date": "2026-08-02",
     "tags": ["AI获客", "GEO获客", "轻诊断", "咨询入口"]
+  },
+  {
+    "id": 10,
+    "category": "行业方案",
+    "title": "酒店行业怎么落地 GEO？从信息诊断到答案型官网的实施方案",
+    "summary": "从酒店信息诊断、场景资料整理到答案型官网，搭建更容易被客户、搜索和 AI 理解的内容基础。",
+    "url": "/articles/hotel-geo-implementation-guide/",
+    "date": "2026-08-11",
+    "tags": ["酒店行业", "GEO获客", "答案型官网", "企业知识库"]
   }
 ]
