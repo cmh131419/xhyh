@@ -242,6 +242,57 @@ section {
 
 .card p, .article-body p, .article-body li { color: var(--muted); }
 
+.article-notice {
+  margin: 20px 0;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  background: var(--panel);
+  color: var(--muted);
+}
+
+.article-notice a {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.faq-list {
+  border-top: 1px solid var(--line);
+}
+
+.faq-list details {
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-list summary {
+  position: relative;
+  padding: 20px 42px 20px 0;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-list summary::-webkit-details-marker { display: none; }
+
+.faq-list summary::after {
+  content: "+";
+  position: absolute;
+  right: 4px;
+  top: 17px;
+  font-size: 24px;
+  color: var(--accent);
+}
+
+.faq-list details[open] summary::after { content: "−"; }
+
+.faq-list p {
+  max-width: 860px;
+  margin: 0;
+  padding: 0 42px 20px 0;
+  color: var(--muted);
+}
+
 .tag {
   display: inline-flex;
   align-items: center;
