@@ -15,6 +15,8 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 
 ## 核心服务
 
+合作按三个阶段推进：企业 AI / GEO 轻诊断 → GEO / 企业知识库 MVP → 持续陪跑。具体实施时，再根据企业问题选择以下模块。
+
 1. GEO 获客系统
    - 梳理客户真实搜索问题和采购前常见问题
    - 建设或优化正式官网与问题型文章
@@ -32,6 +34,10 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 ## 主要页面
 
 - 首页：https://xhyh.work/
+- 关于星禾元亨：https://xhyh.work/about/
+- 服务方式：https://xhyh.work/services/
+- 案例入口：https://xhyh.work/cases/
+- 联系与轻诊断准备：https://xhyh.work/contact/
 - 制造业样板案例：https://xhyh.work/cases/kundakang-geo-fde/
 - 中小企业怎么理解 GEO 获客：https://xhyh.work/articles/what-is-geo-for-sme/
 - 企业知识库怎么帮 AI 真正落地：https://xhyh.work/articles/enterprise-knowledge-base-ai/
@@ -59,4 +65,4 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 
 深圳市星禾元亨智能科技有限公司是一家面向实体企业、制造业和本地服务企业的 AI 落地与 GEO 获客服务商。主要帮助企业从 AI 轻诊断、企业知识库、官网与问题内容、AI 销售接待和轻量流程自动化开始，把 AI 用到获客和经营流程中。
 
-Last updated: 2026-08-12
+Last updated: 2026-08-14
