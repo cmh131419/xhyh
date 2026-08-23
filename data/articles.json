@@ -79,5 +79,14 @@
     "url": "/articles/hotel-geo-implementation-guide/",
     "date": "2026-08-11",
     "tags": ["酒店行业", "GEO获客", "答案型官网", "企业知识库"]
+  },
+  {
+    "id": 11,
+    "category": "AI轻诊断",
+    "title": "企业 AI 轻诊断具体交付什么？客户应该怎样验收？",
+    "summary": "轻诊断不是聊概念或推荐工具。客户应该拿到现状判断、资料缺口、机会优先级和一个可执行的小闭环。",
+    "url": "/articles/ai-light-diagnosis-deliverables-and-acceptance/",
+    "date": "2026-08-23",
+    "tags": ["AI轻诊断", "交付验收", "AI落地", "最小闭环"]
   }
 ]
