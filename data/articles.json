@@ -88,5 +88,14 @@
     "url": "/articles/ai-light-diagnosis-deliverables-and-acceptance/",
     "date": "2026-08-23",
     "tags": ["AI轻诊断", "交付验收", "AI落地", "最小闭环"]
+  },
+  {
+    "id": 12,
+    "category": "GEO获客",
+    "title": "企业做 GEO 前，需要准备哪些资料和证据？",
+    "summary": "GEO 不是先批量发文章。先把企业身份、产品场景、客户问题、事实证据、公开页面和咨询承接整理清楚。",
+    "url": "/articles/geo-preparation-materials-and-evidence/",
+    "date": "2026-08-30",
+    "tags": ["GEO获客", "资料准备", "企业知识库", "证据资产"]
   }
 ]
