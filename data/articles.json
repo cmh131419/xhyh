@@ -1,5 +1,14 @@
 [
   {
+    "id": 13,
+    "category": "AI销售接待",
+    "title": "企业做 AI 销售接待，哪些步骤适合先自动化？",
+    "summary": "先让 AI 整理客户问题、匹配资料、生成回复草稿和提示下一步；涉及报价、适配和承诺的内容仍由人工确认。",
+    "url": "/articles/ai-sales-reception-first-automation-steps/",
+    "date": "2026-09-06",
+    "tags": ["AI销售接待", "轻量自动化", "客户问题", "人工确认"]
+  },
+  {
     "id": 1,
     "category": "GEO获客",
     "title": "中小企业怎么理解 GEO 获客",
