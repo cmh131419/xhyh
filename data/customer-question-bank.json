@@ -1,0 +1,49 @@
+{
+  "updatedAt": "2026-09-12",
+  "scope": "制造业 GEO 公开内容选题",
+  "usage": "本问题库用于从客户真实问法中筛选官网文章、FAQ 和销售资料选题。问题为通用模板，发布前必须由企业确认具体产品、参数、适用范围、交付和公开边界。",
+  "questions": [
+    {
+      "id": "mfg-geo-001",
+      "stage": "认知",
+      "question": "这类设备或方案主要解决哪一道工序的问题？",
+      "publicContent": "适合",
+      "requiredEvidence": ["产品或服务正式说明", "应用场景说明"]
+    },
+    {
+      "id": "mfg-geo-002",
+      "stage": "适配",
+      "question": "我的产品、材料、产能或现场条件适不适合用这套方案？",
+      "publicContent": "适合，但需说明条件和不适用情形",
+      "requiredEvidence": ["适用范围", "限制条件", "人工技术确认流程"]
+    },
+    {
+      "id": "mfg-geo-003",
+      "stage": "比较",
+      "question": "不同型号、方案或人工方式之间，应该按什么标准选择？",
+      "publicContent": "适合，但不得代替具体选型或报价",
+      "requiredEvidence": ["对比维度", "正式产品资料", "选型确认人"]
+    },
+    {
+      "id": "mfg-geo-004",
+      "stage": "信任",
+      "question": "企业有哪些可公开的技术资料、交付流程或案例证据可以帮助判断？",
+      "publicContent": "适合，需取得公开授权",
+      "requiredEvidence": ["资质或检测材料", "公开案例授权", "交付流程说明"]
+    },
+    {
+      "id": "mfg-geo-005",
+      "stage": "决策",
+      "question": "咨询或评估前，客户需要准备哪些样品、参数、现场信息或业务目标？",
+      "publicContent": "适合",
+      "requiredEvidence": ["咨询准备清单", "人工响应负责人"]
+    },
+    {
+      "id": "mfg-geo-006",
+      "stage": "交付与售后",
+      "question": "从需求确认到交付、培训和售后，双方分别需要配合什么？",
+      "publicContent": "适合，需使用企业已确认的服务边界",
+      "requiredEvidence": ["交付流程", "售后范围", "责任边界"]
+    }
+  ]
+}

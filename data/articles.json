@@ -1,5 +1,14 @@
 [
   {
+    "id": 14,
+    "category": "制造业 GEO",
+    "title": "制造业企业做 GEO，第一批问题文章该怎么选？",
+    "summary": "从客户的工序、适配、比较、证据、咨询准备和交付问题出发，先搭问题地图，再用已确认资料逐一回答。",
+    "url": "/articles/manufacturing-geo-question-map/",
+    "date": "2026-09-12",
+    "tags": ["制造业 GEO", "客户问题库", "问题文章", "企业知识库"]
+  },
+  {
     "id": 13,
     "category": "AI销售接待",
     "title": "企业做 AI 销售接待，哪些步骤适合先自动化？",
