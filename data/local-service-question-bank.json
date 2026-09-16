@@ -1,0 +1,13 @@
+{
+  "updatedAt": "2026-09-16",
+  "scope": "实体店与本地服务 AI 引流公开内容选题",
+  "usage": "用于从客户真实问法筛选官网、地图/店铺资料、FAQ 和预约承接内容。具体服务适配、价格、效果、健康安全及预约可用性必须由门店人工确认。",
+  "questions": [
+    {"id":"local-ai-001","stage":"发现","question":"你们主要服务哪些区域、哪些人群和哪些需求？","publicContent":"适合","requiredEvidence":["门店或服务主体信息","服务区域","已确认服务范围"]},
+    {"id":"local-ai-002","stage":"理解","question":"这项服务主要解决什么问题，哪些情况不适合直接选择？","publicContent":"适合，但需说明边界","requiredEvidence":["服务说明","不适用情形","人工专业确认规则"]},
+    {"id":"local-ai-003","stage":"比较","question":"不同服务项目之间，客户应该按什么条件初步判断？","publicContent":"适合，但不得替代个体化建议","requiredEvidence":["项目差异说明","服务边界","人工咨询入口"]},
+    {"id":"local-ai-004","stage":"行动","question":"第一次咨询或到店前，需要准备什么信息，下一步怎么安排？","publicContent":"适合","requiredEvidence":["咨询准备清单","预约流程","响应负责人"]},
+    {"id":"local-ai-005","stage":"信任","question":"门店有哪些可公开的服务流程、资质或经授权评价可以帮助客户判断？","publicContent":"适合，需核验授权","requiredEvidence":["公开资质或流程","评价或案例授权","更新时间"]},
+    {"id":"local-ai-006","stage":"跟进","question":"客户咨询后，谁负责确认下一步，哪些问题需要转人工？","publicContent":"适合","requiredEvidence":["跟进规则","人工升级条件","负责人记录"]}
+  ]
+}
