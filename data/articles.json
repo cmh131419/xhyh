@@ -1,5 +1,14 @@
 [
   {
+    "id": 16,
+    "category": "AI 信息核验",
+    "title": "AI 回答错了企业信息，应该怎么排查？",
+    "summary": "先核对企业主体、服务边界、事实证据、引用来源和咨询入口；修复官方页面后，再用固定问题集复测。",
+    "url": "/articles/ai-information-error-checklist/",
+    "date": "2026-09-18",
+    "tags": ["AI 信息核验", "GEO", "企业公开信息", "固定问题集"]
+  },
+  {
     "id": 15,
     "category": "实体店 AI 引流",
     "title": "实体店做 AI 引流，哪些事情适合先自动化？",

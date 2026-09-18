@@ -1,0 +1,13 @@
+{
+  "updatedAt": "2026-09-18",
+  "scope": "企业公开信息与 AI 回答核验",
+  "usage": "用于检查 AI、搜索与公开页面对企业的描述是否准确。问题模板不构成平台算法结论；发现错误时先核验官方资料和页面版本，再由企业负责人确认修改。",
+  "questions": [
+    {"id":"verify-001","stage":"主体","question":"AI 是否正确说明企业名称、所在地、官方网站和主要服务对象？","publicContent":"适合","requiredEvidence":["官网 About 页","正式联系方式","最新页面链接"]},
+    {"id":"verify-002","stage":"服务","question":"AI 是否把企业的服务范围、适用客户和不提供的业务说清楚？","publicContent":"适合","requiredEvidence":["服务页","已确认业务边界","负责人确认"]},
+    {"id":"verify-003","stage":"事实","question":"回答中的产品、案例、资质、数据或合作方，是否有可公开、可核验的来源？","publicContent":"适合，未核验内容不得公开背书","requiredEvidence":["官方页面","授权材料","证据登记"]},
+    {"id":"verify-004","stage":"来源","question":"AI 引用或依据了哪些公开页面，这些页面是否仍可访问且信息一致？","publicContent":"适合","requiredEvidence":["固定问题测试记录","页面访问检查","sitemap"]},
+    {"id":"verify-005","stage":"行动","question":"客户看完答案后，能否找到正确的咨询入口和下一步准备信息？","publicContent":"适合","requiredEvidence":["联系页","咨询准备清单","人工响应负责人"]},
+    {"id":"verify-006","stage":"纠正","question":"发现错误后，应优先修哪一条官方页面、谁确认、何时复测？","publicContent":"适合","requiredEvidence":["错误记录","页面负责人","复测日期"]}
+  ]
+}
