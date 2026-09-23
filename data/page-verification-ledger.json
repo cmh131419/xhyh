@@ -1,0 +1,17 @@
+{
+  "title": "星禾元亨公开页面核验台账",
+  "baselineDate": "2026-09-23",
+  "statusDefinitions": {
+    "readability": "直接读取页面并检查标题、正文、链接与结构化数据。",
+    "indexing": "在对应搜索引擎的站长平台按具体网址核验。",
+    "crawlerAccess": "核验服务器日志或已验证身份的站长平台访问记录及响应结果。",
+    "aiCitation": "用固定问题测试，保存回答日期、问题、引用链接与准确性复查结果。"
+  },
+  "pages": [
+    {"url":"https://xhyh.work/services/","customerQuestion":"星禾元亨适不适合我？","factualBasis":"当前官方服务范围、适用对象、权限与周期说明。","updated":"2026-09-23","readability":"待本轮上线复查","indexing":"未验证","crawlerAccess":"未验证","aiCitation":"未验证","issue":"需建立具体网址的站长平台记录。","nextStep":"上线后读取页面；再补站长平台与固定问题测试记录。"},
+    {"url":"https://xhyh.work/articles/ai-light-diagnosis-deliverables-and-acceptance/","customerQuestion":"轻诊断到底交付什么？","factualBasis":"官方服务说明；教学用脱敏结构示例，不代表客户案例。","updated":"2026-09-23","readability":"待本轮上线复查","indexing":"未验证","crawlerAccess":"未验证","aiCitation":"未验证","issue":"尚无获授权的真实脱敏报告样例。","nextStep":"上线后读取页面；获得授权后补真实脱敏样例。"},
+    {"url":"https://xhyh.work/articles/enterprise-knowledge-base-ai/","customerQuestion":"知识库建好后是什么样？","factualBasis":"公开知识库建设说明；真实客户条目、来源版本与审核记录尚未获授权公开。","updated":"2026-09-23","readability":"待本轮上线复查","indexing":"未验证","crawlerAccess":"未验证","aiCitation":"未验证","issue":"缺少可公开的脱敏条目与审核记录。","nextStep":"建立明确标注为示例的条目、来源、版本与审核记录。"},
+    {"url":"https://xhyh.work/cases/kundakang-geo-fde/","customerQuestion":"坤达康项目实际做了什么？","factualBasis":"页面已列出的建设过程；定位为样板与实践案例，不代表获客、收录或成交效果。","updated":"2026-09-23","readability":"待本轮上线复查","indexing":"未验证","crawlerAccess":"未验证","aiCitation":"未验证","issue":"可公开的过程文件与日期记录仍待授权。","nextStep":"获授权后补齐过程记录，并保持不写未验证效果。"},
+    {"url":"https://xhyh.work/articles/ai-information-error-checklist/","customerQuestion":"AI 回答错了，你们怎么处理？","factualBasis":"公开信息核验方法；没有获授权的真实问题与复查记录时，不将方法文章表述为实际处置案例。","updated":"2026-09-23","readability":"待本轮上线复查","indexing":"未验证","crawlerAccess":"未验证","aiCitation":"未验证","issue":"缺少获授权的真实问题、排查与复查记录。","nextStep":"建立问题编号、来源、排查、复查日期和公开授权字段。"}
+  ]
+}
