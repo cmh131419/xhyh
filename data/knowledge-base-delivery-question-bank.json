@@ -1,0 +1,13 @@
+{
+  "updatedAt": "2026-09-27",
+  "scope": "企业知识库条目交付与验收",
+  "usage": "用于小范围知识库的交付检查；问题模板不代表真实客户交付。事实、公开权限和审核结果须由资料负责人确认。",
+  "questions": [
+    {"id":"kb-delivery-001","stage":"问题与答案","question":"这条知识回答的是客户哪一个具体问题，适用条件和限制是什么？","requiredEvidence":["客户问题原话","经确认的回答","适用条件与限制"]},
+    {"id":"kb-delivery-002","stage":"来源","question":"答案依据哪份资料或哪个页面，来源版本和确认日期是什么？","requiredEvidence":["来源文件或网址","资料版本","确认日期"]},
+    {"id":"kb-delivery-003","stage":"审核","question":"哪些事实已审核，哪些参数、价格、资质或承诺仍待业务负责人确认？","requiredEvidence":["审核记录","业务负责人","待确认事项"]},
+    {"id":"kb-delivery-004","stage":"公开范围","question":"这条知识属于公开、内部、客户授权后公开，还是敏感内容？","requiredEvidence":["公开等级","授权记录或内部权限说明"]},
+    {"id":"kb-delivery-005","stage":"复用","question":"审核通过的答案会用于官网、FAQ、销售接待还是 AI 工具，使用的是同一版本吗？","requiredEvidence":["使用位置","当前版本","同步检查"]},
+    {"id":"kb-delivery-006","stage":"更新","question":"资料变化后由谁更新、谁复核，旧版本如何标记失效？","requiredEvidence":["更新负责人","复核日期","新旧版本关系"]}
+  ]
+}
