@@ -60,6 +60,8 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 - 企业 AI 轻诊断具体交付什么、怎样验收：https://xhyh.work/articles/ai-light-diagnosis-deliverables-and-acceptance/
 - 企业知识库条目交付教学示例：https://xhyh.work/articles/knowledge-base-entry-example/
 - 知识库交付问题库：https://xhyh.work/question-bank/knowledge-base-delivery/
+- 企业知识库验收方法：https://xhyh.work/articles/knowledge-base-acceptance-two-paths/
+- 企业知识库验收测试题模板：https://xhyh.work/question-bank/knowledge-base-acceptance/
 - 公开页面核验台账：https://xhyh.work/verification/page-verification-ledger/
 - 企业做 GEO 前需要准备哪些资料和证据：https://xhyh.work/articles/geo-preparation-materials-and-evidence/
 

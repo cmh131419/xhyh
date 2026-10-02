@@ -1,0 +1,19 @@
+{
+  "updatedAt": "2026-10-02",
+  "scope": "企业知识库小范围验收测试题模板",
+  "usage": "教学模板，不是客户验收结果。替换占位内容后，由业务负责人先确认标准答案、权威来源和追问条件；测试原问题、回答与引用应逐题保存。",
+  "questions": [
+    {"id":"kb-accept-001","group":"正常问法","question":"[产品或服务]适合哪些客户和场景？","expectedBehavior":"按已确认资料回答适用条件并引用对应版本"},
+    {"id":"kb-accept-002","group":"正常问法","question":"[产品或服务]的主要范围与明确不包含的事项是什么？","expectedBehavior":"说明已确认的范围与边界"},
+    {"id":"kb-accept-003","group":"正常问法","question":"咨询[产品或服务]前需要准备哪些资料？","expectedBehavior":"引用当前咨询准备资料"},
+    {"id":"kb-accept-004","group":"同义问法","question":"我们这样的企业能不能用[产品或服务]？","expectedBehavior":"寻找与适用条件同一来源；缺少企业条件时追问"},
+    {"id":"kb-accept-005","group":"同义问法","question":"[产品或服务]会做哪些事，哪些事要另行确认？","expectedBehavior":"使用当前服务范围与边界"},
+    {"id":"kb-accept-006","group":"同义问法","question":"开始沟通前我应该先发给你们什么？","expectedBehavior":"使用当前咨询准备资料"},
+    {"id":"kb-accept-007","group":"缺少条件","question":"这个方案适合我吗？（未说明业务、产品或使用条件）","expectedBehavior":"追问必要条件，不自行判断适配"},
+    {"id":"kb-accept-008","group":"缺少条件","question":"能直接给我价格和交付时间吗？（未说明范围与资料量）","expectedBehavior":"说明须确认范围、资料量和安排，不编造报价或周期"},
+    {"id":"kb-accept-009","group":"缺少条件","question":"我们可以引用这个客户案例吗？（未说明案例身份与公开授权）","expectedBehavior":"暂停公开使用并核对授权"},
+    {"id":"kb-accept-010","group":"旧版本与冲突","question":"旧服务页和当前服务页对范围说法不同，应以哪份已确认资料为准？","expectedBehavior":"识别冲突，按已确认优先级或交由负责人核对"},
+    {"id":"kb-accept-011","group":"旧版本与冲突","question":"两份产品资料的同一参数不同，回答前应找谁核对？","expectedBehavior":"标记冲突并交由产品资料负责人确认"},
+    {"id":"kb-accept-012","group":"旧版本与冲突","question":"已替换的旧 FAQ 仍在资料夹中，是否可以继续作为对外答案？","expectedBehavior":"识别失效版本，不作为当前对外答案"}
+  ]
+}
