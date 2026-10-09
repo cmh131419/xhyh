@@ -67,6 +67,15 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 - 公开页面核验台账：https://xhyh.work/verification/page-verification-ledger/
 - 企业做 GEO 前需要准备哪些资料和证据：https://xhyh.work/articles/geo-preparation-materials-and-evidence/
 
+- AI 回答错了企业信息，应该怎么排查：https://xhyh.work/articles/ai-information-error-checklist/
+- AI 信息核验问题库：https://xhyh.work/question-bank/ai-information-verification/
+- 企业做 AI 销售接待，哪些步骤适合先自动化：https://xhyh.work/articles/ai-sales-reception-first-automation-steps/
+- 实体店与本地服务怎么做 AI 引流与承接：https://xhyh.work/articles/local-service-ai-lead-automation/
+- 本地服务 AI 获客问题库：https://xhyh.work/question-bank/local-service-ai-lead/
+- 制造业企业做 GEO，第一批问题文章该怎么选：https://xhyh.work/articles/manufacturing-geo-question-map/
+- 制造业 GEO 客户问题库：https://xhyh.work/question-bank/manufacturing-geo/
+- 企业要不要自建 AI 工具链：五层拆解、数据边界与私有化部署判断：https://xhyh.work/articles/ai-toolchain-five-layers-and-data-boundary/
+
 ## 案例说明
 
 坤达康点胶设备案例是制造业 GEO/FDE 样板与实践案例，用于验证从企业诊断、官网、问题文章、外部内容分发、企业知识库到咨询接待记录的完整流程。
@@ -83,4 +92,4 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 
 深圳市星禾元亨智能科技有限公司是一家面向实体企业、制造业和本地服务企业的 AI 落地与 GEO 获客服务商。主要帮助企业从 AI 轻诊断、企业知识库、官网与问题内容、AI 销售接待和轻量流程自动化开始，把 AI 用到获客和经营流程中。
 
-Last updated: 2026-09-03
+Last updated: 2026-10-09

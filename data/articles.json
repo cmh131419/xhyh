@@ -1,5 +1,14 @@
 [
   {
+    "id": 20,
+    "category": "AI 工具与数据边界",
+    "title": "企业要不要自建 AI 工具链？五层拆解、数据边界与私有化部署判断",
+    "summary": "工具只是工作台：先拆五层看清哪层值得工具化，再判断哪些资料不能出内网、什么时候才需要私有化部署。",
+    "url": "/articles/ai-toolchain-five-layers-and-data-boundary/",
+    "date": "2026-10-09",
+    "tags": ["AI 工具选型", "数据边界", "私有化部署", "企业 AI 落地", "GEO"]
+  },
+  {
     "id": 19,
     "category": "企业 AI 轻诊断",
     "title": "做企业 AI 轻诊断，需要提供系统账号或业务数据库吗？",
