@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>企业让 AI 检查重复工作，开始前要明确哪六件事？ | 星禾元亨</title>
+  <meta name="description" content="把一项重复工作交给 AI 前，先写清输入、权威资料、字段映射、版本冲突、缺项处理和人工验收，避免把不确定信息当成事实。">
+  <link rel="canonical" href="https://xhyh.work/articles/ai-task-definition-checklist/">
+  <meta property="og:title" content="企业让 AI 检查重复工作，开始前要明确哪六件事？"><meta property="og:description" content="用六项规则定义 AI 任务：输入、资料来源、字段映射、冲突优先级、缺项处理和人工验收。"><meta property="og:type" content="article"><meta property="og:url" content="https://xhyh.work/articles/ai-task-definition-checklist/"><meta property="og:image" content="https://xhyh.work/images/og-image.png">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav"><a class="brand" href="/"><img class="brand-logo" src="/assets/logo-xhyh.png" alt="星禾元亨标志"><span>星禾元亨</span></a><div class="nav-links"><a href="/">首页</a><a href="/#articles">知识文章</a><a href="/services/">服务</a><a href="/contact/">咨询</a></div></nav></header>
+  <main class="article-shell">
+    <div class="eyebrow">企业 AI 落地 / 任务定义</div>
+    <h1>企业让 AI 检查重复工作，开始前要明确哪六件事？</h1>
+    <div class="article-meta"><span>主题：AI 任务定义与人工复核</span><span>发布单位：深圳市星禾元亨智能科技有限公司</span><span>发布：2026-10-21</span><span>更新：2026-10-21</span></div>
+    <blockquote class="ai-summary"><strong>直接回答：</strong>先写清要处理什么输入、以哪份资料为准、字段如何对应、资料冲突时按什么规则处理、缺项时是暂停还是标记，以及由谁按什么标准复核。规则未确认的部分应明确标为待确认，不让 AI 猜测补齐。</blockquote>
+    <article class="article-body">
+      <p>企业希望 AI 帮忙检查、归类或整理重复资料时，常见的困难不只是“选哪个工具”，还包括任务边界和判断依据没有说清。开始前先把规则写出来，才能判断输出是否可用；这是一份通用的任务定义清单，不代表某个客户项目或固定服务交付。</p>
+      <h2>先回答六个问题</h2>
+      <ol>
+        <li><strong>输入是什么？</strong>说明文件、表格或文本的类型、范围和版本，必要时列出不处理的内容。</li>
+        <li><strong>以什么资料为准？</strong>指定业务负责人认可的来源，并记录资料名称、版本或生效时间。没有指定权威来源时，先请负责人确认。</li>
+        <li><strong>字段怎样对应？</strong>把同义词、单位、格式和字段含义说明白，避免把名称相近但含义不同的内容当成相同字段。</li>
+        <li><strong>资料冲突怎么办？</strong>由业务负责人给出版本或来源优先级；若规则未定或无法判断，输出冲突位置并暂停相关结论。</li>
+        <li><strong>缺少信息怎么办？</strong>明确哪些字段可以留空、哪些必须追问，以及哪些情况应标记“待确认”。不要默认用常识或模型生成内容填补业务事实。</li>
+        <li><strong>谁来复核、怎样验收？</strong>指定人工审核人，并约定检查项目，例如字段是否匹配、依据是否可追溯、异常是否被标出、输出格式是否符合需要。</li>
+      </ol>
+      <h2>把规则写成一张任务卡</h2>
+      <table class="fact-table">
+        <tr><th>任务目标</th><td>一句话说明要检查或整理的内容，以及不在本次范围内的事项。</td></tr>
+        <tr><th>输入与依据</th><td>列出输入资料、权威来源、版本信息和字段对应规则。</td></tr>
+        <tr><th>异常处理</th><td>约定冲突、缺项、格式异常和超出范围时，是追问、暂停还是提示人工判断。</td></tr>
+        <tr><th>输出与复核</th><td>规定结果格式、需要保留的依据，以及复核人和验收检查项。</td></tr>
+      </table>
+      <p>如果用于试点，可以先选一个边界清楚、资料经授权且容易人工核对的重复任务，准备几种正常输入和异常情况，逐项检查输出是否符合预先写下的规则。测试题和标准答案由业务负责人确认；没有确认的判断标准，应记录为待补充，而不是把模型回答当作标准答案。</p>
+      <h2>哪些内容应保留人工确认？</h2>
+      <p>凡是会形成对外承诺或影响业务决策的内容，例如价格、产品适配、交付承诺、资质和客户案例，都应由有权限的负责人依据当前有效资料确认。AI 可以协助整理、比较和提示疑点，但不能替代企业对事实、规则和最终结果的确认。</p>
+      <h2>本轮问题库</h2>
+      <p>这里整理了 8 道任务定义与复核问题，可作为内部讨论模板；请按实际业务补充规则和确认人。<a href="/question-bank/ai-task-definition/">查看 AI 任务定义问题库 →</a></p>
+      <h2>常见问题</h2>
+      <h3>资料有冲突时，AI 能自己判断哪个版本更新吗？</h3><p>不能把自动判断当作业务规则。应由负责人指定来源或版本优先级；暂未确认时，列出冲突并交由人工处理。</p>
+      <h3>资料缺项时，可以让 AI 按常识补全吗？</h3><p>涉及企业产品、价格、适配或承诺等事实时，不应默认补全。应按事先约定留空、追问或标记待确认。</p>
+      <h3>怎样判断这项任务测试通过？</h3><p>先由业务负责人准备覆盖正常输入和异常情况的测试题及预期处理方式，再检查结果是否遵守来源、映射、异常处理和输出规则；未确认的答案标准不能用于判定通过。</p>
+      <h3>AI 输出后还需要人工复核吗？</h3><p>需要根据任务风险和约定安排复核。涉及对外信息、业务判断或承诺的内容，应由有权限的负责人确认后再使用。</p>
+      <h2>下一步</h2>
+      <p>先挑一项重复工作，把输入、依据、例外和复核人写在同一张任务卡上，再决定是否需要接入工具或流程。<a href="/services/">查看服务范围</a>，或<a href="/contact/">准备一次轻诊断</a>。</p>
+      <footer class="article-author"><p><strong>依据与日期：</strong>本文为星禾元亨整理的通用任务定义检查模板，强调资料依据、异常处理与人工复核；不构成特定行业的专业结论，也不代表客户案例或效果承诺。更新于 2026 年 10 月 21 日。</p></footer>
+    </article>
+    <section class="cta"><div><h2>从一项边界清楚的重复任务开始</h2><p>先确认资料来源和人工复核方式，再评估是否需要工具化。</p></div><a class="btn" href="/contact/">查看咨询准备资料</a></section>
+  </main><footer class="footer">© 2026 深圳市星禾元亨智能科技有限公司 · xhyh.work · 13434418794</footer>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://xhyh.work/articles/ai-task-definition-checklist/#article","headline":"企业让 AI 检查重复工作，开始前要明确哪六件事？","description":"用六项规则定义 AI 任务：输入、资料来源、字段映射、冲突优先级、缺项处理和人工验收。","datePublished":"2026-10-21","dateModified":"2026-10-21","inLanguage":"zh-CN","image":"https://xhyh.work/images/og-image.png","author":{"@type":"Organization","name":"深圳市星禾元亨智能科技有限公司","url":"https://xhyh.work/"},"publisher":{"@type":"Organization","name":"深圳市星禾元亨智能科技有限公司","url":"https://xhyh.work/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://xhyh.work/articles/ai-task-definition-checklist/"},"keywords":["AI 任务定义","字段映射","资料版本","人工复核","重复工作"]},{"@type":"FAQPage","@id":"https://xhyh.work/articles/ai-task-definition-checklist/#faq","mainEntity":[{"@type":"Question","name":"资料有冲突时，AI 能自己判断哪个版本更新吗？","acceptedAnswer":{"@type":"Answer","text":"不能把自动判断当作业务规则。应由负责人指定来源或版本优先级；暂未确认时，列出冲突并交由人工处理。"}},{"@type":"Question","name":"资料缺项时，可以让 AI 按常识补全吗？","acceptedAnswer":{"@type":"Answer","text":"涉及企业产品、价格、适配或承诺等事实时，不应默认补全。应按事先约定留空、追问或标记待确认。"}},{"@type":"Question","name":"怎样判断这项任务测试通过？","acceptedAnswer":{"@type":"Answer","text":"先由业务负责人准备覆盖正常输入和异常情况的测试题及预期处理方式，再检查结果是否遵守来源、映射、异常处理和输出规则；未确认的答案标准不能用于判定通过。"}},{"@type":"Question","name":"AI 输出后还需要人工复核吗？","acceptedAnswer":{"@type":"Answer","text":"需要根据任务风险和约定安排复核。涉及对外信息、业务判断或承诺的内容，应由有权限的负责人确认后再使用。"}}]}]}</script>
+</body></html>
