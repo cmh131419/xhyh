@@ -69,6 +69,8 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 - 企业 AI 项目价值复查问题库：https://xhyh.work/question-bank/ai-project-value-three-layers/
 - 企业让 AI 检查重复工作前要明确的六件事：https://xhyh.work/articles/ai-task-definition-checklist/
 - 企业 AI 任务定义与人工复核问题库：https://xhyh.work/question-bank/ai-task-definition/
+- 企业决定做知识库后第一步的确认清单：https://xhyh.work/articles/knowledge-base-start-checklist/
+- 企业知识库启动问题库：https://xhyh.work/question-bank/knowledge-base-start/
 - 公开页面核验台账：https://xhyh.work/verification/page-verification-ledger/
 - 企业做 GEO 前需要准备哪些资料和证据：https://xhyh.work/articles/geo-preparation-materials-and-evidence/
 
@@ -88,4 +90,4 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 
 深圳市星禾元亨智能科技有限公司是一家面向实体企业、制造业和本地服务企业的 AI 落地与 GEO 获客服务商。主要帮助企业从 AI 轻诊断、企业知识库、官网与问题内容、AI 销售接待和轻量流程自动化开始，把 AI 用到获客和经营流程中。
 
-Last updated: 2026-10-21
+Last updated: 2026-10-27
