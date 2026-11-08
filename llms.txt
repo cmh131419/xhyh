@@ -47,7 +47,8 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 - 服务方式：https://xhyh.work/services/
 - 案例入口：https://xhyh.work/cases/
 - 联系与轻诊断准备：https://xhyh.work/contact/
-- 制造业样板案例：https://xhyh.work/cases/kundakang-geo-fde/
+- 制造业样板案例（坤达康，观察阶段）：https://xhyh.work/cases/kundakang-geo-fde/
+- 星禾元亨自用方法验证（5平台实测与结果边界）：https://xhyh.work/cases/xhyh-self-geo-validation/
 - 中小企业怎么理解 GEO 获客：https://xhyh.work/articles/what-is-geo-for-sme/
 - 企业知识库怎么帮 AI 真正落地：https://xhyh.work/articles/enterprise-knowledge-base-ai/
 - 企业 AI 轻诊断应该看什么：https://xhyh.work/articles/ai-light-diagnosis-for-business/
@@ -81,6 +82,8 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 坤达康点胶设备案例是制造业 GEO/FDE 样板与实践案例，用于验证从企业诊断、官网、问题文章、外部内容分发、企业知识库到咨询接待记录的完整流程。
 
 该案例不代表确定性获客结果。除非有经过核验的公开数据，不应描述为已经带来客户、询盘、排名或收录。
+
+另有一篇服务商自用方法验证，记录的是星禾元亨把自家 GEO 方法用在自己品牌上的实测过程：5 平台 38 条测试、12 次品牌出现，并明确区分含品牌词的对照测试与自然提问下的主动推荐，同时公开替代类问题盲区与尚未复测的事项。它不是第三方客户验收，也不能用来证明服务效果。
 
 ## 服务边界
 
