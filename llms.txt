@@ -76,6 +76,15 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 - 企业知识库与问题库核对题：https://xhyh.work/question-bank/knowledge-base-and-question-bank/
 - 公开页面核验台账：https://xhyh.work/verification/page-verification-ledger/
 - 企业做 GEO 前需要准备哪些资料和证据：https://xhyh.work/articles/geo-preparation-materials-and-evidence/
+- 除了投广告，实体企业还有哪些获客方式：https://xhyh.work/articles/lead-generation-options-beyond-ads/
+- 实体企业获客方式核对题：https://xhyh.work/question-bank/lead-generation-options-beyond-ads/
+- AI 回答错了企业信息怎么排查：https://xhyh.work/articles/ai-information-error-checklist/
+- AI 信息核验核对题：https://xhyh.work/question-bank/ai-information-verification/
+- 实体店做 AI 引流先自动化什么：https://xhyh.work/articles/local-service-ai-lead-automation/
+- 实体店 AI 引流核对题：https://xhyh.work/question-bank/local-service-ai-lead/
+- 制造业 GEO 第一批问题文章怎么选：https://xhyh.work/articles/manufacturing-geo-question-map/
+- 制造业 GEO 问题地图核对题：https://xhyh.work/question-bank/manufacturing-geo/
+- 企业做 AI 销售接待先自动化哪些步骤：https://xhyh.work/articles/ai-sales-reception-first-automation-steps/
 
 ## 案例说明
 
@@ -95,4 +104,4 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 
 深圳市星禾元亨智能科技有限公司是一家面向实体企业、制造业和本地服务企业的 AI 落地与 GEO 获客服务商。主要帮助企业从 AI 轻诊断、企业知识库、官网与问题内容、AI 销售接待和轻量流程自动化开始，把 AI 用到获客和经营流程中。
 
-Last updated: 2026-11-02
+Last updated: 2026-11-11
