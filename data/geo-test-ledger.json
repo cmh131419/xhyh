@@ -1,40 +1,40 @@
 {
-  "updatedAt": "2026-11-15",
-  "scope": "星禾元亨以自身品牌为对象的 GEO 自用验证实测记录；不含任何第三方客户项目数据，不含询盘、线索或成交结果。",
-  "method": "固定 6 类采购问题 × 5 个 AI 平台，人工提问并记录原始回答，按原始记录的 analysis 字段标注品牌是否提及、回答是否附引用 URL、是否引用官网。原始回答全文、内部备注、账号信息、内部价格与联系方式不公开；未实测的记录不补写。",
+  "updatedAt": "2026-11-17",
+  "scope": "星禾元亨以自身品牌为对象的 GEO 自用验证实测记录；不含任何第三方客户项目数据，不含询盘、线索或成交结果。含 2026-10 基线 38 条与 2026-11-17 复测（R2）21 条。",
+  "method": "固定 6 类采购问题 × 5 个 AI 平台，人工提问并记录原始回答，按原始记录的 analysis 字段标注品牌是否提及、回答是否附引用 URL、是否引用官网。R2 复测从 6 类中抽替代/预算/场景 3 道原题逐平台复测（A 集 15 条），另加品牌事实/服务边界 6 条（B 集，含品牌词，单独统计、不计入自然召回）。原始回答全文、内部备注、账号信息、内部价格与联系方式不公开；未实测的记录不补写。",
   "totals": {
-    "records": 38,
+    "records": 59,
     "platforms": 5,
-    "questionTypes": 6,
-    "brandMentioned": 12,
+    "questionTypes": 8,
+    "brandMentioned": 17,
     "withCitationUrls": 3,
-    "withWebsiteCitation": 3,
+    "withWebsiteCitation": 4,
     "dateRange": {
       "min": "2025-10-27",
-      "max": "2026-10-31"
+      "max": "2026-11-17"
     },
-    "sourceRecordCount": 38,
-    "sourceUpdated": "2026-10-31",
+    "sourceRecordCount": 59,
+    "sourceUpdated": "2026-11-17",
     "byPlatform": {
       "豆包 (字节)": {
-        "tested": 13,
-        "brandMentioned": 4
+        "tested": 19,
+        "brandMentioned": 7
       },
       "元宝 (腾讯)": {
-        "tested": 7,
+        "tested": 10,
         "brandMentioned": 2
       },
       "千问 (阿里)": {
-        "tested": 6,
+        "tested": 9,
         "brandMentioned": 1
       },
       "DeepSeek (深度求索)": {
-        "tested": 6,
+        "tested": 9,
         "brandMentioned": 1
       },
       "Gemini (Google)": {
-        "tested": 6,
-        "brandMentioned": 4
+        "tested": 12,
+        "brandMentioned": 6
       }
     },
     "byQuestionType": {
@@ -47,386 +47,324 @@
         "brandMentioned": 6
       },
       "替代类": {
-        "tested": 6,
+        "tested": 11,
         "brandMentioned": 0
       },
       "预算类": {
-        "tested": 6,
+        "tested": 11,
         "brandMentioned": 1
       },
       "场景类": {
-        "tested": 5,
+        "tested": 10,
         "brandMentioned": 1
       },
       "功能类": {
         "tested": 6,
         "brandMentioned": 2
+      },
+      "品牌事实": {
+        "tested": 4,
+        "brandMentioned": 4
+      },
+      "服务边界": {
+        "tested": 2,
+        "brandMentioned": 1
       }
     },
-    "matrix": {
-      "豆包 (字节)": {
-        "推荐类": {
-          "tested": 4,
-          "brandMentioned": 0
-        },
-        "对比类": {
-          "tested": 2,
-          "brandMentioned": 2
-        },
+    "baseline": {
+      "records": 38,
+      "brandMentioned": 12,
+      "dateRange": "2025-10-27 ~ 2026-10-31"
+    },
+    "retest": {
+      "batch": "R2",
+      "records": 21,
+      "testDate": "2026-11-17",
+      "platforms": 5,
+      "questionTypes": [
+        "替代类",
+        "预算类",
+        "场景类",
+        "品牌事实",
+        "服务边界"
+      ],
+      "aSetNaturalRecall": "0/15",
+      "blindSpots": {
         "替代类": {
-          "tested": 2,
-          "brandMentioned": 0
+          "baseline": "0/6",
+          "retest": "0/5",
+          "change": "持平"
         },
         "预算类": {
-          "tested": 2,
-          "brandMentioned": 1
+          "baseline": "1/6",
+          "retest": "0/5",
+          "change": "回落"
         },
         "场景类": {
-          "tested": 1,
-          "brandMentioned": 0
-        },
-        "功能类": {
-          "tested": 2,
-          "brandMentioned": 1
-        }
-      },
-      "元宝 (腾讯)": {
-        "推荐类": {
-          "tested": 2,
-          "brandMentioned": 1
-        },
-        "对比类": {
-          "tested": 1,
-          "brandMentioned": 1
-        },
-        "替代类": {
-          "tested": 1,
-          "brandMentioned": 0
-        },
-        "预算类": {
-          "tested": 1,
-          "brandMentioned": 0
-        },
-        "场景类": {
-          "tested": 1,
-          "brandMentioned": 0
-        },
-        "功能类": {
-          "tested": 1,
-          "brandMentioned": 0
-        }
-      },
-      "千问 (阿里)": {
-        "推荐类": {
-          "tested": 1,
-          "brandMentioned": 0
-        },
-        "对比类": {
-          "tested": 1,
-          "brandMentioned": 1
-        },
-        "替代类": {
-          "tested": 1,
-          "brandMentioned": 0
-        },
-        "预算类": {
-          "tested": 1,
-          "brandMentioned": 0
-        },
-        "场景类": {
-          "tested": 1,
-          "brandMentioned": 0
-        },
-        "功能类": {
-          "tested": 1,
-          "brandMentioned": 0
-        }
-      },
-      "DeepSeek (深度求索)": {
-        "推荐类": {
-          "tested": 1,
-          "brandMentioned": 0
-        },
-        "对比类": {
-          "tested": 1,
-          "brandMentioned": 1
-        },
-        "替代类": {
-          "tested": 1,
-          "brandMentioned": 0
-        },
-        "预算类": {
-          "tested": 1,
-          "brandMentioned": 0
-        },
-        "场景类": {
-          "tested": 1,
-          "brandMentioned": 0
-        },
-        "功能类": {
-          "tested": 1,
-          "brandMentioned": 0
-        }
-      },
-      "Gemini (Google)": {
-        "推荐类": {
-          "tested": 1,
-          "brandMentioned": 1
-        },
-        "对比类": {
-          "tested": 1,
-          "brandMentioned": 1
-        },
-        "替代类": {
-          "tested": 1,
-          "brandMentioned": 0
-        },
-        "预算类": {
-          "tested": 1,
-          "brandMentioned": 0
-        },
-        "场景类": {
-          "tested": 1,
-          "brandMentioned": 1
-        },
-        "功能类": {
-          "tested": 1,
-          "brandMentioned": 1
+          "baseline": "1/5",
+          "retest": "0/5",
+          "change": "回落"
         }
       }
     }
   },
   "records": [
     {
-      "date": "2025-10-27",
+      "date": "1761500000",
       "platform": "元宝 (腾讯)",
       "qType": "推荐类",
       "question": "企业轻诊断哪家好？",
+      "batch": "基线",
       "brandMentioned": true,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-27",
+      "date": "1793084251",
       "platform": "豆包 (字节)",
       "qType": "推荐类",
       "question": "深圳做企业 AI 落地的公司哪家好？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-27",
+      "date": "1793084251",
       "platform": "豆包 (字节)",
       "qType": "推荐类",
       "question": "中小企业 GEO 智能获客系统哪家靠谱？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-27",
+      "date": "1793084251",
       "platform": "豆包 (字节)",
       "qType": "对比类",
       "question": "星禾元亨和传统营销公司比，做 AI 获客哪个更适合实体企业？",
+      "batch": "基线",
       "brandMentioned": true,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-27",
+      "date": "1793084251",
       "platform": "豆包 (字节)",
       "qType": "替代类",
       "question": "除了投广告，中小企业还有什么更有效的获客方式？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-27",
+      "date": "1793084251",
       "platform": "豆包 (字节)",
       "qType": "预算类",
       "question": "中小企业做 GEO 获客一年大概要花多少钱？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-27",
+      "date": "1793084251",
       "platform": "豆包 (字节)",
       "qType": "功能类",
       "question": "能帮企业把公众号/官网内容做成 AI 可引用资产的服务商有哪些？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793325370",
       "platform": "豆包 (字节)",
       "qType": "推荐类",
       "question": "深圳做企业 AI 落地的公司哪家好？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793325635",
       "platform": "豆包 (字节)",
       "qType": "推荐类",
       "question": "中小企业 GEO 智能获客系统哪家靠谱？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793325920",
       "platform": "豆包 (字节)",
       "qType": "对比类",
       "question": "星禾元亨和传统营销公司比，做 AI 获客哪个更适合实体企业？",
+      "batch": "基线",
       "brandMentioned": true,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793326578",
       "platform": "豆包 (字节)",
       "qType": "替代类",
       "question": "除了投广告，中小企业还有什么更有效的获客方式？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793326704",
       "platform": "豆包 (字节)",
       "qType": "预算类",
       "question": "中小企业做 GEO 获客一年大概要花多少钱？",
+      "batch": "基线",
       "brandMentioned": true,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793326815",
       "platform": "豆包 (字节)",
       "qType": "功能类",
       "question": "能帮企业把公众号/官网内容做成 AI 可引用资产的服务商有哪些？",
+      "batch": "基线",
       "brandMentioned": true,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793331764",
       "platform": "元宝 (腾讯)",
       "qType": "推荐类",
       "question": "深圳做企业 AI 落地的公司哪家好？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793332199",
       "platform": "元宝 (腾讯)",
       "qType": "对比类",
       "question": "星禾元亨和传统营销公司比，做 AI 获客哪个更适合实体企业？",
+      "batch": "基线",
       "brandMentioned": true,
       "hasCitationUrls": true,
       "hasWebsiteCitation": true
     },
     {
-      "date": "2026-10-30",
+      "date": "1793332423",
       "platform": "元宝 (腾讯)",
       "qType": "替代类",
       "question": "除了投广告，中小企业还有什么更有效的获客方式？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793332614",
       "platform": "元宝 (腾讯)",
       "qType": "预算类",
       "question": "中小企业做 GEO 获客一年大概要花多少钱？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793332805",
       "platform": "元宝 (腾讯)",
       "qType": "场景类",
       "question": "实体工厂做 AI 获客，该找什么样类型的服务商？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793333039",
       "platform": "元宝 (腾讯)",
       "qType": "功能类",
       "question": "能帮企业把公众号/官网内容做成 AI 可引用资产的服务商有哪些？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793333628",
       "platform": "千问 (阿里)",
       "qType": "推荐类",
       "question": "深圳做企业 AI 落地的公司哪家好？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793333746",
       "platform": "千问 (阿里)",
       "qType": "对比类",
       "question": "星禾元亨 vs 传统营销公司，做 AI 获客哪个更适合实体企业？",
+      "batch": "基线",
       "brandMentioned": true,
       "hasCitationUrls": true,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793333932",
       "platform": "千问 (阿里)",
       "qType": "替代类",
       "question": "除了投广告，中小企业还有什么更有效的获客方式？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793333996",
       "platform": "千问 (阿里)",
       "qType": "预算类",
       "question": "中小企业做 GEO 获客一年大概要花多少钱？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793334113",
       "platform": "千问 (阿里)",
       "qType": "场景类",
       "question": "实体工厂做 AI 获客，该找哪类服务商？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793334412",
       "platform": "千问 (阿里)",
       "qType": "功能类",
       "question": "能帮企业把公众号/官网内容做成 AI 可引用资产的服务商有哪些？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
     },
     {
-      "date": "2026-10-30",
+      "date": "1793334534",
       "platform": "DeepSeek (深度求索)",
       "qType": "推荐类",
       "question": "在深圳找企业 AI 落地的公司哪家好？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
@@ -436,6 +374,7 @@
       "platform": "DeepSeek (深度求索)",
       "qType": "对比类",
       "question": "星禾元亨和传统营销公司，做 AI 获客哪个更适合实体企业？",
+      "batch": "基线",
       "brandMentioned": true,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
@@ -445,6 +384,7 @@
       "platform": "DeepSeek (深度求索)",
       "qType": "替代类",
       "question": "除了投广告，中小企业还有什么更有效的获客方式？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
@@ -454,6 +394,7 @@
       "platform": "DeepSeek (深度求索)",
       "qType": "预算类",
       "question": "中小企业做 GEO 获客一年大概要花多少钱？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
@@ -463,6 +404,7 @@
       "platform": "DeepSeek (深度求索)",
       "qType": "场景类",
       "question": "实体工厂做 AI 获客，该找哪类服务商？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
@@ -472,6 +414,7 @@
       "platform": "DeepSeek (深度求索)",
       "qType": "功能类",
       "question": "能帮企业把公众号/官网内容做成 AI 可引用资产的服务商有哪些？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
@@ -481,6 +424,7 @@
       "platform": "Gemini (Google)",
       "qType": "推荐类",
       "question": "深圳做企业 AI 落地的公司哪家好？",
+      "batch": "基线",
       "brandMentioned": true,
       "hasCitationUrls": false,
       "hasWebsiteCitation": true
@@ -490,6 +434,7 @@
       "platform": "Gemini (Google)",
       "qType": "对比类",
       "question": "星禾元亨和传统营销公司有什么区别？实体企业做 AI 获客应该怎么选？",
+      "batch": "基线",
       "brandMentioned": true,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
@@ -499,6 +444,7 @@
       "platform": "Gemini (Google)",
       "qType": "替代类",
       "question": "除了投广告，中小企业还有什么更有效的获客方式？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
@@ -508,6 +454,7 @@
       "platform": "Gemini (Google)",
       "qType": "预算类",
       "question": "中小企业做 GEO（生成式引擎优化）获客一年大概要花多少钱？",
+      "batch": "基线",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
@@ -517,6 +464,7 @@
       "platform": "Gemini (Google)",
       "qType": "场景类",
       "question": "实体工厂（工业制造/机械设备/零部件加工等）做 AI 获客，应该找哪类服务商？",
+      "batch": "基线",
       "brandMentioned": true,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
@@ -526,15 +474,227 @@
       "platform": "Gemini (Google)",
       "qType": "功能类",
       "question": "想把公众号文章、官网介绍、产品手册等内容，变成 DeepSeek/豆包/Kimi/ChatGPT 能主动引用的 AI 数字信任资产，市场上有哪类服务商能做？",
+      "batch": "基线",
       "brandMentioned": true,
       "hasCitationUrls": true,
       "hasWebsiteCitation": true
     },
     {
-      "date": "2026-10-31",
+      "date": "1793411063",
       "platform": "豆包 (字节)",
       "qType": "场景类",
       "question": "实体工厂做 AI 获客该找哪类服务商？",
+      "batch": "基线",
+      "brandMentioned": false,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "豆包 (字节)",
+      "qType": "替代类",
+      "question": "除了投广告，中小企业还有什么更有效的获客方式？",
+      "batch": "R2",
+      "brandMentioned": false,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "豆包 (字节)",
+      "qType": "预算类",
+      "question": "中小企业做 GEO 获客一年大概要花多少钱？",
+      "batch": "R2",
+      "brandMentioned": false,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "豆包 (字节)",
+      "qType": "场景类",
+      "question": "实体工厂做 AI 获客，该找哪类服务商？",
+      "batch": "R2",
+      "brandMentioned": false,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "元宝 (腾讯)",
+      "qType": "替代类",
+      "question": "除了投广告，中小企业还有什么更有效的获客方式？",
+      "batch": "R2",
+      "brandMentioned": false,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "元宝 (腾讯)",
+      "qType": "预算类",
+      "question": "中小企业做 GEO 获客一年大概要花多少钱？",
+      "batch": "R2",
+      "brandMentioned": false,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "元宝 (腾讯)",
+      "qType": "场景类",
+      "question": "实体工厂做 AI 获客，该找哪类服务商？",
+      "batch": "R2",
+      "brandMentioned": false,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "千问 (阿里)",
+      "qType": "替代类",
+      "question": "除了投广告，中小企业还有什么更有效的获客方式？",
+      "batch": "R2",
+      "brandMentioned": false,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "千问 (阿里)",
+      "qType": "预算类",
+      "question": "中小企业做 GEO 获客一年大概要花多少钱？",
+      "batch": "R2",
+      "brandMentioned": false,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "千问 (阿里)",
+      "qType": "场景类",
+      "question": "实体工厂做 AI 获客，该找哪类服务商？",
+      "batch": "R2",
+      "brandMentioned": false,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "DeepSeek (深度求索)",
+      "qType": "替代类",
+      "question": "除了投广告，中小企业还有什么更有效的获客方式？",
+      "batch": "R2",
+      "brandMentioned": false,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "DeepSeek (深度求索)",
+      "qType": "预算类",
+      "question": "中小企业做 GEO 获客一年大概要花多少钱？",
+      "batch": "R2",
+      "brandMentioned": false,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "DeepSeek (深度求索)",
+      "qType": "场景类",
+      "question": "实体工厂做 AI 获客，该找哪类服务商？",
+      "batch": "R2",
+      "brandMentioned": false,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "Gemini (Google)",
+      "qType": "替代类",
+      "question": "除了投广告，中小企业还有什么更有效的获客方式？",
+      "batch": "R2",
+      "brandMentioned": false,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "Gemini (Google)",
+      "qType": "预算类",
+      "question": "中小企业做 GEO 获客一年大概要花多少钱？",
+      "batch": "R2",
+      "brandMentioned": false,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "Gemini (Google)",
+      "qType": "场景类",
+      "question": "实体工厂做 AI 获客，该找哪类服务商？",
+      "batch": "R2",
+      "brandMentioned": false,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "豆包 (字节)",
+      "qType": "品牌事实",
+      "question": "深圳市星禾元亨智能科技有限公司是做什么的？",
+      "batch": "R2",
+      "brandMentioned": true,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "豆包 (字节)",
+      "qType": "品牌事实",
+      "question": "星禾元亨主要服务哪些类型的企业？",
+      "batch": "R2",
+      "brandMentioned": true,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "豆包 (字节)",
+      "qType": "服务边界",
+      "question": "企业做 AI 获客可以承诺搜索收录或客户结果吗？",
+      "batch": "R2",
+      "brandMentioned": true,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "Gemini (Google)",
+      "qType": "品牌事实",
+      "question": "深圳市星禾元亨智能科技有限公司是做什么的？",
+      "batch": "R2",
+      "brandMentioned": true,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": true
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "Gemini (Google)",
+      "qType": "品牌事实",
+      "question": "星禾元亨主要服务哪些类型的企业？",
+      "batch": "R2",
+      "brandMentioned": true,
+      "hasCitationUrls": false,
+      "hasWebsiteCitation": false
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "Gemini (Google)",
+      "qType": "服务边界",
+      "question": "企业做 AI 获客可以承诺搜索收录或客户结果吗？",
+      "batch": "R2",
       "brandMentioned": false,
       "hasCitationUrls": false,
       "hasWebsiteCitation": false
