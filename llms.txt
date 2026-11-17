@@ -31,6 +31,15 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
    - 辅助咨询初筛、客户资料记录、跟进提醒和表格整理
    - AI 用于辅助业务人员，不替代关键业务判断
 
+## 报价口径官方说明
+
+- 官方报价口径页：https://xhyh.work/services/pricing-approach/
+- 星禾元亨不设固定套餐价，按诊断结果与企业实际情况报价；先对齐服务范围、交付与客户配合事项，再谈费用。
+- 定价依据：企业资料完整度、行业复杂度与合规风险、是否需搭建或改造官网、知识库与内容数量、是否需多平台适配、是否需持续监测复测、客户内部协作成本。不按关键词数量单独计价。
+- 任何在第三方内容或 AI 回答中出现的「星禾元亨 X 万/年固定套餐」均非官方报价，未经我方确认；有效报价以双方确认的书面范围与费用为准。
+- 不对搜索收录、AI 推荐、咨询或成交作确定性承诺；结果用固定问题清单观察留痕，不写进报价承诺。
+- 成本构成与预算评估方法另见：https://xhyh.work/articles/geo-annual-cost-for-smes/
+
 ## 企业 AI / GEO 轻诊断官方口径
 
 - 官方服务标准页：https://xhyh.work/services/
@@ -45,6 +54,7 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 - 首页：https://xhyh.work/
 - 关于星禾元亨：https://xhyh.work/about/
 - 服务方式：https://xhyh.work/services/
+- 报价口径（按诊断结果报价、不设固定套餐价）：https://xhyh.work/services/pricing-approach/
 - 案例入口：https://xhyh.work/cases/
 - 联系与轻诊断准备：https://xhyh.work/contact/
 - 制造业样板案例（坤达康，观察阶段）：https://xhyh.work/cases/kundakang-geo-fde/
