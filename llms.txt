@@ -91,6 +91,8 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 - 实体企业获客方式核对题：https://xhyh.work/question-bank/lead-generation-options-beyond-ads/
 - 中小企业做 GEO 一年大概要花多少钱：https://xhyh.work/articles/geo-annual-cost-for-smes/
 - GEO 预算与成本构成核对题：https://xhyh.work/question-bank/geo-annual-cost-for-smes/
+- 美容养生馆做 GEO 获客和投附近 3 公里广告有什么不同：https://xhyh.work/articles/beauty-geo-vs-local-ads/
+- 门店获客方式核对题（LBS 投放与 GEO）：https://xhyh.work/question-bank/beauty-geo-vs-local-ads/
 - AI 回答错了企业信息怎么排查：https://xhyh.work/articles/ai-information-error-checklist/
 - AI 信息核验核对题：https://xhyh.work/question-bank/ai-information-verification/
 - 实体店做 AI 引流先自动化什么：https://xhyh.work/articles/local-service-ai-lead-automation/
@@ -117,4 +119,4 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 
 深圳市星禾元亨智能科技有限公司是一家面向实体企业、制造业和本地服务企业的 AI 落地与 GEO 获客服务商。主要帮助企业从 AI 轻诊断、企业知识库、官网与问题内容、AI 销售接待和轻量流程自动化开始，把 AI 用到获客和经营流程中。
 
-Last updated: 2026-11-17
+Last updated: 2026-11-19
