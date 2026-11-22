@@ -613,3 +613,32 @@ section {
 @media (max-width: 860px) {
   .grid.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* 导航常驻电话入口（2026-11-22 新增，全站 52 页统一） */
+.nav-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  padding: 9px 14px;
+  border-radius: 8px;
+  background: var(--green);
+  color: #fff !important;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.nav-phone:hover { background: #1c633c; }
+.nav-phone-icon { font-size: 15px; }
+.nav-phone-num { font-variant-numeric: tabular-nums; letter-spacing: 0.3px; }
+@media (max-width: 860px) {
+  .nav-phone { padding: 7px 10px; font-size: 12px; gap: 4px; }
+  .nav-phone-num { letter-spacing: 0; }
+}
+@media (max-width: 420px) {
+  .nav-phone-icon { display: none; }
+  .nav-phone { padding: 7px 9px; font-size: 12px; }
+}
