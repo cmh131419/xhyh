@@ -57,6 +57,7 @@ GEO 获客用大白话解释：把企业的产品、应用场景和客户问题�
 - 报价口径（按诊断结果报价、不设固定套餐价）：https://xhyh.work/services/pricing-approach/
 - 案例入口：https://xhyh.work/cases/
 - 联系与轻诊断准备：https://xhyh.work/contact/
+- 实体企业 AI / GEO 落地自检清单（诊断三问 + 固定问题集 + 交付边界，咨询前自查）：https://xhyh.work/checklist/
 - 制造业样板案例（坤达康，观察阶段）：https://xhyh.work/cases/kundakang-geo-fde/
 - 星禾元亨自用方法验证（5平台实测与结果边界）：https://xhyh.work/cases/xhyh-self-geo-validation/
 - 中小企业怎么理解 GEO 获客：https://xhyh.work/articles/what-is-geo-for-sme/
